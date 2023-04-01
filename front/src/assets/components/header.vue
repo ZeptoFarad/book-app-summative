@@ -5,7 +5,7 @@
         <h5 class="account-btn">My Account</h5>
         <h5 class="sign-btn">Sign Up</h5>
         <div class="shopping-car">
-           <img src="" alt="" height="12px" width="9px">
+           <img src="../img/logo2.png" alt="" height="12px">
            <p class="increat-item">0</p>
         </div>
     </div>

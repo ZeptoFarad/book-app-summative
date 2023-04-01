@@ -16,6 +16,7 @@
 </template>
 <style scoped>
     .header-box1{
+        background-color:rgba(62, 26, 9, 1) ;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -39,7 +40,7 @@
         min-width: 150px;
     }
     .account-btn{
-        background-color: rgb(255, 221, 0);
+        background-color:rgba(254, 176, 0, 1) ;
         padding: 5px;
         margin:5px;
         border-radius: 6px;

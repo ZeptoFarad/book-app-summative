@@ -73,7 +73,7 @@
     padding:5px 0px 0px 0px;
   }
   .yellow-box{
-    background-color:rgb(255, 221, 0) ;
+    background-color:rgba(254, 176, 0, 1) ;
     padding: 5px;
         margin:5px;
         border-radius: 6px;

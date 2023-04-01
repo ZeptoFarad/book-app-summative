@@ -21,7 +21,7 @@
                     
                 
                           <div class="footer-pic">
-                              <img src="./img/greenlogo.png" alt="" height="60px" width="90px">
+                              <img src="../img/logo1b.png" alt="" height="60px">
                               <div class="footer-btn-box">
                                   <span class="yellow-box">Sign up</span>
                                   <span  class="white-box">Login</span>

@@ -1,6 +1,6 @@
 <template>
     <div class="header-box1">
-        <img src="" alt="" height="70px" width="100px">
+        <img src="../img/logo1a.png" alt="" height="70px">
         <input type="text" placeholder="please enter your search book name or author name" class="search-box">
         <h5 class="account-btn">My Account</h5>
         <h5 class="sign-btn">Sign Up</h5>

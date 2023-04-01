@@ -5,7 +5,7 @@
         <h5 class="account-btn">My Account</h5>
         <h5 class="sign-btn">Sign Up</h5>
         <div class="shopping-car">
-           <img src="./img/logo2.png" alt="" height="12px" width="9px">
+           <img src="" alt="" height="12px" width="9px">
            <p class="increat-item">0</p>
         </div>
     </div>
@@ -32,7 +32,7 @@
         font-size: 12px;
     }
     .search-box{
-        border: 2px solid rgb(43, 60, 7);
+        border: 2px solid rgba(62, 26, 9, 1);
         padding: 3px;
         margin: 5px;
         border-radius: 6px;
@@ -46,7 +46,7 @@
         min-width: 70px;
     }
     .sign-btn{
-        background-color: rgb(43, 60, 7);
+        background-color: rgba(62, 26, 9, 1);
         color: white;
         padding: 5px;
         margin: 5px;
@@ -54,7 +54,7 @@
         min-width: 46px;
     }
     .header-box2{
-        background-color: rgb(43, 60, 7);
+        background-color: rgba(62, 26, 9, 1);
         margin: 0px;
         padding: 6px 6px 10px 17px;
         color: white;

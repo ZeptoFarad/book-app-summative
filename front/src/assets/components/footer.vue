@@ -38,7 +38,7 @@
 </template>
 <style scoped>
 .footer{
-    background-color: rgb(43, 60, 7);
+    background-color: rgba(62, 26, 9, 1);
     min-width: 480px;
     padding: 5px;
     align-content: center;

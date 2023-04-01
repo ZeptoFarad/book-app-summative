@@ -24,6 +24,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    background-color:rgba(254, 248, 243, 1) ;
   }
 
 </style>

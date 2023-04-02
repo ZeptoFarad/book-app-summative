@@ -144,16 +144,18 @@ body {
   margin: 0 auto;
 }
 
-/* Fonts */
-
 @font-face {
-  font-family: 'Quicksand';
-  src: url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+  font-family: 'Quicksand_Regular';
+  src: url('./fonts/QuicksandRegular.ttf');
+}
+@font-face {
+  font-family: 'Quicksand_SemiBold';
+  src: url('./fonts/QuicksandSemiBold.ttf');
 }
 
 @font-face {
   font-family: 'Amatic';
-  src: url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+  src: url('./fonts/AmaticSCRegular.ttf');
 }
 
 h1 {
@@ -162,27 +164,27 @@ h1 {
 }
 
 h2 {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand_SemiBold';
   font-weight: 600;
   font-size: clamp(24px, 3vw, 40px);
 }
 h3 {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand_SemiBold';
   font-weight: 600;
   font-size: 16px;
 }
 h4 {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand_Regular';
   font-weight: 400;
   font-size: 16px;
 }
 h5 {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand_SemiBold';
   font-weight: 600;
   font-size: 14px;
 }
 p {
-  font-family: 'Quicksand';
+  font-family: 'Quicksand_Regular';
   font-weight: 400;
   font-size: 20px;
 }

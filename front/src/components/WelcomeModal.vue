@@ -3,7 +3,7 @@
         <div class="welcome-modal">
         <div class="centered-modal-section">
             <div class="img-logo-wrapper">
-                <img class= 'logo' src="../assets/images/PeekabookLogo.svg" alt="">
+                <img class= 'logo' src="../assets/images/PeekabookLogo_brown.svg" alt="">
             </div>
             <h1>Welcome to Peekabook</h1>
             <h2>Why are you visiting?</h2>
@@ -45,13 +45,16 @@
     .centered-modal-section{
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
         
     }
 
     .centered-modal-section > * {
         margin-bottom: 15px;
         text-align: center;
+        
     }
 
     .buttons-flex{
@@ -59,24 +62,23 @@
         justify-content: space-between;
         width: 300px;
         margin: auto; 
-       
-       
     }
 
-    @media (max-width: 900px){
+
+    @media (max-width: 840px){
         
         .welcome-modal{
             width: 90%;
         }
-       
-        
-        h1{
-            font-size: clamp()
-        }
-
-     
-   
       
+    }
+    
+    @media (max-width:400px){
+        
+
+        .buttons-flex{
+           width: 95%;
+        }
     }
 
 </style>

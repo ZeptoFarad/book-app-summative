@@ -1,4 +1,11 @@
+<script setup>
+import headerVue from './components/Header.vue'
+</script>
+
 <template>
+   <div class="header-area">
+     <headerVue />
+   </div>
   <div>
     <h1>Test</h1>
     <h2>Test H2</h2>

@@ -1,5 +1,6 @@
 <template>
-    <div class="welcome-modal">
+    <div class="background-modal">
+        <div class="welcome-modal">
         <div class="centered-modal-section">
             <div class="img-logo-wrapper">
                 <img class= 'logo' src="../assets/images/PeekabookLogo.svg" alt="">
@@ -11,13 +12,18 @@
                 <button class="tertiary_button">Buy Books</button>
             </div>
         </div>
-       
-
     </div>
+    </div>
+
+    
 </template>
 
 <style scoped>
-
+    .background-modal{
+        background-color: grey;
+        height: 100vh;
+        
+    }
     .welcome-modal{
         height: 521px;
         width: 819px;
@@ -62,9 +68,15 @@
         .welcome-modal{
             width: 90%;
         }
-
-        h2{
-            font-size: clamp();
+       
+        
+        h1{
+            font-size: clamp()
         }
+
+     
+   
       
     }
+
+</style>

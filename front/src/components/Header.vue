@@ -25,7 +25,8 @@
     
 </template>
 <style scoped>
-    #logo1{ height: 70px;
+    #logo1{ height: 60px;
+        padding: 5px 5px 5px 0px;
     }
     #logo2{
         height:15px;
@@ -43,12 +44,12 @@
     .primary_button{
         padding: 8px;
         margin:5px;
-        width: fit-content;
+        min-width: 115px;
     }
     .secondary_button{
         padding: 8px;
         margin:5px;
-        width: fit-content; 
+        min-width: 71px;
     }
     
     .shopping-car{
@@ -66,7 +67,6 @@
         padding: 3px;
         margin: 5px;
         border-radius: 6px;
-        min-width: 150px;
     }
    
   

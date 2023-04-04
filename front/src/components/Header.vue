@@ -1,6 +1,6 @@
 <template>
     <div class="header-box1">
-        <img src="../assets/img/logo1.png" alt="" height="70px">
+        <img src="../assets/images/PeekabookLogo.svg" alt="" height="70px" color="white">
         <input type="text" placeholder="please enter your search book name or author name" class="search-box">
         <h5 class="primary_button">My Account</h5>
         <h5 class="secondary_button">Sign Up</h5>

@@ -5,8 +5,8 @@
         <h5 class="primary_button">My Account</h5>
         <h5 class="secondary_button">Sign Up</h5>
         <div class="shopping-car">
-           <img src="../assets/img/logo2.png" alt="" height="12px">
-           <p class="increat-item">0</p>
+           <img src="../assets/img/logo2.png" alt="" height="14px">
+           <p class="increat-item">{{ amount }}</p>
         </div>
     </div>
     <div>
@@ -63,3 +63,17 @@
     }
 
 </style>
+<script>
+   export default {
+     data(){
+        return{
+            amount:0
+        }
+
+     }
+   }
+        
+
+        
+    
+</script>

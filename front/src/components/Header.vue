@@ -5,7 +5,7 @@
         <h5 class="primary_button">My Account</h5>
         <h5 class="secondary_button">Sign Up</h5>
         <div class="shopping-car">
-           <img src="../assets/img/logo2.png" alt="" height="14px">
+           <img src="../assets/img/logo21.png" alt="" height="14px">
            <p class="increat-item">{{ amount }}</p>
         </div>
     </div>

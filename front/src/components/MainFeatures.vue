@@ -72,6 +72,7 @@
         width: 143px;
     }
 
+<<<<<<< Updated upstream
     @media (max-width: 900px){
         .main-features-wrapper{
             width: 600px;
@@ -97,4 +98,18 @@
     }
 
 
+=======
+    @media (max-width: 1238px){
+        .main-features-wrapper{
+            background-color: blue;
+            
+        }
+
+        .img-wrapper{
+            max-width: 260px;
+        }
+
+    }
+
+>>>>>>> Stashed changes
 </style>

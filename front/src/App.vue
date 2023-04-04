@@ -43,7 +43,8 @@ import PopularCategories from './components/PopularCategories.vue'
   }
 
   .main-h1-title{
-    padding: 50px 0 50px 130px;
+    padding: 50px 0;
+    width: 400px;
     color: var(--book_brown);
   }
 

@@ -1,7 +1,7 @@
 <template>
     <div class="main-features-wrapper">
         <div class="img-wrapper">
-            <img src="../assets/images/surprise-me-img.jpeg" alt="girl-holding-books">
+            <img class="top-image" src="../assets/images/surprise-me-img.jpeg" alt="girl-holding-books">
             <div class="title-wrapper">
                 <h2 class="img-title">Suprise Me</h2>
                 <div class="line"></div>
@@ -30,15 +30,15 @@
 
     .main-features-wrapper{
         display: flex;
-        gap: 50px;
+        gap: 48px;
         max-width: 1288px;
+        justify-content: center;
+        margin: 0 5%;
     }
 
     .img-wrapper{
-        width: 350px;
-        height: 215px;
+        flex: 1;
         position: relative;
-        
     }
 
     img{
@@ -58,8 +58,8 @@
         position: absolute;
         color: white;
         top: 5%;
-        left: 55%;
-        width: 130px;
+        right: clamp(30px,10%,60px);
+        max-width: 130px;
     }
 
     .img-title{
@@ -71,5 +71,30 @@
         height: 10px;
         width: 143px;
     }
+
+    @media (max-width: 900px){
+        .main-features-wrapper{
+            width: 600px;
+            background-color: aqua;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .img-wrapper{
+            flex: none;
+            height: 110px;
+            width: 100%;
+        }
+
+        img{
+            object-position: 50% 50%;
+        }
+
+        .top-image{
+            object-position: 50% 20%;
+        }
+    }
+
 
 </style>

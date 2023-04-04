@@ -25,12 +25,13 @@ import PopularCategories from './components/PopularCategories.vue'
 
 <style scoped>
   .cards-section{
+    
     background-color: var(--book_wheat);
     display: flex;
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     width: 100%;
     padding: 60px 0;
   }

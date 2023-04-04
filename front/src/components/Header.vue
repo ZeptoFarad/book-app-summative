@@ -25,10 +25,10 @@
     
 </template>
 <style scoped>
-    .logo1{ height: 60px;
+    #logo1{ height: 70px;
     }
-    .logo2{
-        height:10px;
+    #logo2{
+        height:15px;
     }
     .header-box1{
         background-color:rgba(62, 26, 9, 1) ;
@@ -57,7 +57,7 @@
     }
     .increat-item{
         color:white;
-        padding: 0px 0px 0px 3px; 
+        padding: 0px 0px 0px 1px; 
         font-size: 12px;
 
     }

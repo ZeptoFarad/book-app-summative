@@ -22,8 +22,6 @@
 
 <style scoped>
 
-
-
 .book-card-wrapper{
     background-color: white;
     width: 272px;

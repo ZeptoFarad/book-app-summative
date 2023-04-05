@@ -11,8 +11,8 @@
         <h5 class="primary_button">My Account</h5>
         <h5 class="secondary_button">Sign Up</h5>
         <div class="header-manu-logo">
-            <svg  id="manu-logo" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 9H11.5M1 5H11.5M1 1H11.5" stroke="#FEF8F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg  id="manu-logo" width="35" height="35" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9H11.5M1 5H11.5M1 1H11.5" stroke="#FEF8F3" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
         
@@ -28,12 +28,15 @@
         </div>
     </div>
     <div class="header-box2">
-       <h5 class="header-box2-calte">Shop by catergory</h5>
+       <h5 class="header-box2-catle">Shop by catergory</h5>
        <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
     
 </template>
+
 <style scoped>
+
+@media screen and (max-width:1440px){
     #logo1{ height: 60px;
         padding: 5px 5px 5px 0px;
     }
@@ -106,21 +109,31 @@
     .search-box2{
         display: none;
     }
-    @media screen and (max-width:320px){
-        #logo1{height: 85px;}
-      .search-box1{ display: none;}
-      .primary_button{ display: none;}
-      .secondary_button{ display: none;}
-      .shopping-car{ display:none;}
-      .header-manu-logo{ display: block;}
-      .header-box2-calte{ display: none;}
-      .search-box2{
+}
+
+@media screen and (max-width:500px){
+    .header-box1{display: flex; }
+    #logo1{height:65px; padding: 0px; }
+    .search-box1{ display: none;}
+    .primary_button{ display: none;}
+    .secondary_button{ display: none;}
+    .shopping-car{ display:none;}
+    .header-manu-logo{ 
+        margin: 0px 20px 0px 0px;
         display: block;
-         justify-content: center;
-         align-items: center;
-         font-size: 20px;
-        }
+        
     }
+    .header-box2-catle{ display: none;}
+    .search-box2{
+    display: block;
+        margin: 10px auto;
+        padding: 12px 40px ;
+        width: 60vw;
+        text-align: end;
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+    }
+}
 
 </style>
 

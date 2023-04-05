@@ -23,6 +23,8 @@
             <svg id="logo2" width="21.5" height="18.5" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M28.1598 0L34.9248 11.7181H42.1364V15.9318H39.6778L38.0829 35.068C38.0391 35.5945 37.799 36.0853 37.4104 36.4431C37.0217 36.801 36.5128 36.9997 35.9845 37H6.15192C5.62363 36.9997 5.11472 36.801 4.72607 36.4431C4.33741 36.0853 4.09737 35.5945 4.05352 35.068L2.45655 15.9318H0V11.7181H7.20954L13.9767 0L17.6257 2.10682L12.0763 11.7181H30.058L24.5108 2.10682L28.1598 0ZM35.4494 15.9318H6.68494L8.09019 32.7864H34.0441L35.4494 15.9318ZM23.175 20.1454V28.5727H18.9614V20.1454H23.175ZM14.7478 20.1454V28.5727H10.5341V20.1454H14.7478ZM31.6023 20.1454V28.5727H27.3887V20.1454H31.6023Z" fill="#FEF8F3"/>
 </svg>
+
+<!-- <img src="../assets/images/basket.svg" alt="" srcset=""> -->
            </div>
            <p class="increat-item">{{ amount }}</p>
         </div>
@@ -31,12 +33,42 @@
        <h5 class="header-box2-catle">Shop by catergory</h5>
        <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
-    
+    <div class="drop-box-skin">
+       <div class="categorie-box">
+          <h5>TOP CATEGORIES</h5>
+            <ul>
+               <li v-for="top_cat in  top_cate">{{ top_cat }}</li>
+            </ul>
+       </div>
+       <div class="categorie-box">
+          <h5>MORE CATEGORIES</h5>
+            <ul>
+               <li v-for="more_cate in more_cates">{{ more_cate }}</li>
+            </ul>
+       </div>
+       <div class="categorie-box">
+          <h5>TOP AUTHORS</h5>
+            <ul>
+               <li v-for="top_author in  top_authors">{{ top_author }}</li>
+            </ul>
+       </div>
+       <div class="categorie-box">
+          <h5>TOP SELLERS</h5>
+            <ul>
+               <li v-for="top_seler in top_sellers">{{ top_seler }}</li>
+            </ul>
+       </div>
+    </div>
 </template>
 
 <style scoped>
 
 @media screen and (max-width:1440px){
+    .drop-box-skin{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     #logo1{ height: 60px;
         padding: 5px 5px 5px 0px;
     }
@@ -53,10 +85,9 @@
         align-items: center;
         justify-content: space-between;
         padding:6px 10px 0px 2px;
-        border: 1px solid rgb(43, 60, 7);
         margin: 0px;
         max-width: 1440px;
-        min-width: 320px;
+        /* min-width: 320px; */
     }
     .header-manu-logo{
         display: none;
@@ -104,14 +135,14 @@
         padding: 6px 6px 10px 17px;
         color:rgba(62, 26, 9, 1) ;
         max-width: 1440px;
-        min-width: 320px;
+        /* min-width: 320px; */
     }
     .search-box2{
         display: none;
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:620px){
     .header-box1{display: flex; }
     #logo1{height:65px; padding: 0px; }
     .search-box1{ display: none;}
@@ -121,12 +152,11 @@
     .header-manu-logo{ 
         margin: 0px 20px 0px 0px;
         display: block;
-        
     }
     .header-box2-catle{ display: none;}
     .search-box2{
     display: block;
-        margin: 10px auto;
+        margin: 13px auto;
         padding: 12px 40px ;
         width: 60vw;
         text-align: end;
@@ -142,7 +172,11 @@
      data(){
         return{
             amount:0,
-           
+            top_cate:['Top categorie 1', 'Top categorie 2','Top categorie 3','Top categorie 4','Top categorie 5'],
+            more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
+            top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
+            top_sellers:['Seller 1','Seller 2', 'Seller 3','Seller 4','seller 5',],
+
         }
 
      }

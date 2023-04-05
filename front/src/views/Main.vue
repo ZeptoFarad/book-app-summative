@@ -1,11 +1,31 @@
 <script setup>
-    import BookCard from './components/BookCard.vue'
+import BookCard from './components/BookCard.vue'
+import MainFeatures from './components/MainFeatures.vue'
+import PopularCategories from './components/PopularCategories.vue'
+import WideImage from './components/WideImage.vue'
 </script>
 
 <template>
-  <div class="cards-section">
+  <section class="main-features-section">
+    <MainFeatures />
+  </section>
+
+  <h1 class="main-h1-title">Latest Listings</h1>
+
+  <section class="cards-section">
     <BookCard  v-for="book in 8"/>
-  </div>
+  </section>
+
+  <h1 class="main-h1-title">Popular Categories</h1>
+  <section class="popular-categories-section">
+    <PopularCategories />
+  </section>
+
+  <section class="wide-image-section">
+    <WideImage />
+  </section>
+
+
 </template>
 
 <style scoped>
@@ -15,8 +35,28 @@
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     width: 100%;
-    padding: 20px 0;
+    padding: 60px 0;
   }
+
+  .main-features-section{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 0 0;
+  }
+
+  .main-h1-title{
+    padding: 50px 0;
+    width: 400px;
+    color: var(--book_brown);
+    margin: auto 6%;
+  }
+
+  .popular-categories-section{
+    display: flex;
+    justify-content: center;
+    
+  }
+
 </style>

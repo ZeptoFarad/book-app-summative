@@ -75,7 +75,6 @@
     @media (max-width: 900px){
         .main-features-wrapper{
             width: 600px;
-            background-color: aqua;
             flex-direction: column;
             align-items: center;
             gap: 20px;

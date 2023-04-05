@@ -1,23 +1,23 @@
 <template>
     <div class="popular-categories-wrapper">
-    <div class="top-div">
-        <div class="single-category-wrapper">
-            <div class="category">
-                <div class="icon-wrapper">
-                    <img src="../assets/images/thriller-icon.svg" alt="">
+        <div class="top-div">
+            <div class="single-category-wrapper">
+                <div class="category">
+                    <div class="icon-wrapper">
+                        <img src="../assets/images/thriller-icon.svg" alt="">
+                    </div>
                 </div>
+                <h3 class="category-title">Thriller</h3>
             </div>
-            <h3 class="category-title">Thriller</h3>
-        </div>
-        <div class="single-category-wrapper">
-            <div class="category">
-                <div class="icon-wrapper">
-                    <img src="../assets/images/scifi-icon.svg" alt="">
+            <div class="single-category-wrapper">
+                <div class="category">
+                    <div class="icon-wrapper">
+                        <img src="../assets/images/scifi-icon.svg" alt="">
+                    </div>
                 </div>
+                <h3 class="category-title">Sci-Fi</h3>
             </div>
-            <h3 class="category-title">Sci-Fi</h3>
         </div>
-    </div>
 
 
 
@@ -51,7 +51,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 3vw;
-        
+        padding-bottom: 50px;
     }
 
     .top-div, .bottom-div{

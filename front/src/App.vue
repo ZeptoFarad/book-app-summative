@@ -2,6 +2,7 @@
 import BookCard from './components/BookCard.vue'
 import MainFeatures from './components/MainFeatures.vue'
 import PopularCategories from './components/PopularCategories.vue'
+import WideImage from './components/WideImage.vue'
 </script>
 
 <template>
@@ -20,12 +21,15 @@ import PopularCategories from './components/PopularCategories.vue'
     <PopularCategories />
   </section>
 
+  <section class="wide-image-section">
+    <WideImage />
+  </section>
+
 
 </template>
 
 <style scoped>
   .cards-section{
-    
     background-color: var(--book_wheat);
     display: flex;
     justify-content: center;
@@ -46,6 +50,7 @@ import PopularCategories from './components/PopularCategories.vue'
     padding: 50px 0;
     width: 400px;
     color: var(--book_brown);
+    margin: auto 6%;
   }
 
   .popular-categories-section{

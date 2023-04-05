@@ -7,9 +7,17 @@
 </svg>
 
         </div>
-        <input type="text" placeholder="please enter your search book name or author name" class="search-box">
+        <input type="text" placeholder="please enter your search book name or author name" class="search-box1">
         <h5 class="primary_button">My Account</h5>
         <h5 class="secondary_button">Sign Up</h5>
+        <div class="header-manu-logo">
+            <svg  id="manu-logo" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9H11.5M1 5H11.5M1 1H11.5" stroke="#FEF8F3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+        
+        
+        </div>
         <div class="shopping-car">
            <div class="basket">
             <svg id="logo2" width="21.5" height="18.5" viewBox="0 0 43 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,8 +27,9 @@
            <p class="increat-item">{{ amount }}</p>
         </div>
     </div>
-    <div>
-       <h5 class="header-box2">Shop by catergory</h5>
+    <div class="header-box2">
+       <h5 class="header-box2-calte">Shop by catergory</h5>
+       <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
     
 </template>
@@ -29,7 +38,11 @@
         padding: 5px 5px 5px 0px;
     }
     #logo2{
-        height:15px;
+        height:13px;
+    }
+    .book-logo{
+        flex: 3.5;
+        margin: 10px 0px 10px 0px;
     }
     .header-box1{
         background-color:rgba(62, 26, 9, 1) ;
@@ -38,35 +51,47 @@
         justify-content: space-between;
         padding:6px 10px 0px 2px;
         border: 1px solid rgb(43, 60, 7);
-        min-width:480px;
         margin: 0px;
+        max-width: 1440px;
+        min-width: 320px;
+    }
+    .header-manu-logo{
+        display: none;
     }
     .primary_button{
-        padding: 8px;
-        margin:5px;
-        min-width: 115px;
+        padding: 5px;
+        margin:4px;
+        min-width: 85px;
+        flex: 1.3;
+        font-size: 12px;
+        border-radius: 5px;
     }
     .secondary_button{
-        padding: 8px;
+        padding: 5px;
         margin:5px;
-        min-width: 71px;
+        min-width: 50px;
+        flex: 0.8;
+        font-size: 12px;
+        border-radius: 5px;
     }
     
     .shopping-car{
         display: flex;
         align-items: center;
+        flex: 0.5;
     }
     .increat-item{
         color:white;
-        padding: 0px 0px 0px 1px; 
-        font-size: 12px;
+        padding: 4px 0px 0px 0px; 
+        font-size: 10px;
 
     }
-    .search-box{
+    .search-box1{
         border: 2px solid rgb(43, 60, 7);
         padding: 3px;
-        margin: 5px;
-        border-radius: 6px;
+        margin: 5px 15px 5px 20px;
+        border-radius: 4px;
+        flex: 7;
     }
    
   
@@ -75,6 +100,26 @@
         margin: 0px;
         padding: 6px 6px 10px 17px;
         color:rgba(62, 26, 9, 1) ;
+        max-width: 1440px;
+        min-width: 320px;
+    }
+    .search-box2{
+        display: none;
+    }
+    @media screen and (max-width:320px){
+        #logo1{height: 85px;}
+      .search-box1{ display: none;}
+      .primary_button{ display: none;}
+      .secondary_button{ display: none;}
+      .shopping-car{ display:none;}
+      .header-manu-logo{ display: block;}
+      .header-box2-calte{ display: none;}
+      .search-box2{
+        display: block;
+         justify-content: center;
+         align-items: center;
+         font-size: 20px;
+        }
     }
 
 </style>

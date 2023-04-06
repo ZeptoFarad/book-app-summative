@@ -28,8 +28,8 @@
         border-radius: 8px;
     }
     .checkout-button{
-        background-color: rgba(62, 26, 9, 1);
-        color: white;
+        background-color: #feb000;
+        color:black;
         margin: 5px;
         padding: 15px;
         border-radius: 8px;

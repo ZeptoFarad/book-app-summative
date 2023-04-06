@@ -30,10 +30,10 @@
         </div>
     </div>
     <div class="header-box2">
-       <h5 class="header-box2-catle" @mouseover="upHere = true"  @mouseleave="upHere=false">Shop by catergory</h5>
+       <h5 class="header-box2-catle" @click="show_on = !show_on">Shop by catergory</h5>
        <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
-    <div class="drop-box-skin" v-show="upHere">
+    <div class="drop-box-skin" v-if="show_on">
        <hr class="head-line"  />
        <div class="drop-box-body">
        
@@ -68,6 +68,9 @@
 <style scoped>
 
 @media screen and (max-width:1440px){
+    .header-box2-catle{
+        cursor: pointer;
+    }
     .drop-box-skin{
         background-color: white;
         border-radius: 0px 0px 8px 8px;
@@ -99,7 +102,7 @@
         max-height: 200px;
         min-width: 100px;
     }
-    li{padding: 4px; font-size: 12px;}
+    li{padding: 4px; font-size: 12px; cursor: pointer;}
     .head-line{ margin: 0px; border: 2.5px solid #feb000 ;}
 
     #logo1{ height: 60px;
@@ -111,6 +114,7 @@
     .book-logo{
         flex: 3.5;
         margin: 10px 0px 10px 0px;
+        cursor: pointer;
     }
     .header-box1{
         background-color:rgba(62, 26, 9, 1) ;
@@ -132,6 +136,7 @@
         flex: 1.3;
         font-size: 12px;
         border-radius: 5px;
+        cursor: pointer;
     }
     .secondary_button{
         padding: 5px;
@@ -140,12 +145,14 @@
         flex: 0.8;
         font-size: 12px;
         border-radius: 5px;
+        cursor: pointer;
     }
     
     .shopping-car{
         display: flex;
         align-items: center;
         flex: 0.5;
+        cursor: pointer;
     }
     .increat-item{
         color:white;
@@ -173,6 +180,7 @@
 }
 
 @media screen and (max-width:661px){
+
     .drop-box-skin{display: none;}
     .header-box1{display: flex; }
     #logo1{height:65px; padding: 0px; }
@@ -209,7 +217,7 @@
             more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
             top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
             top_sellers:['Top seller book 1','Top seller book 2', 'Top seller book 3','Top seller book 4','Top seller book 5',],
-            upHere:false
+            show_on:false
         }
 
      }

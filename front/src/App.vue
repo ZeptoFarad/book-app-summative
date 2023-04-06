@@ -1,18 +1,25 @@
 <script setup>
 import headerVue from './components/Header.vue'
+import itemAddedCarVue from './components/itemAddedCar.vue';
 </script>
 
 <template>
    <div class="header-area">
      <headerVue />
    </div>
-  <div>
-    <h1>Test</h1>
-    <h2>Test H2</h2>
-    <h3>Test H3</h3>
-    <h4>Test H4</h4>
-    <h5>Test H5</h5>
-    <p>Test p</p>
+  <div class="add-to-car-button">Add to Basket</div>
+  <div class="added-item-car">
+    <itemAddedCarVue />
   </div>
 </template>
+<style scoped>
+    .add-to-car-button{
+      background-color: rgba(62, 26, 9, 1);
+      width: fit-content;
+      margin: 10px;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 8px;
+    }
+</style>
 

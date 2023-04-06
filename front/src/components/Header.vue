@@ -33,7 +33,7 @@
        <h5 class="header-box2-catle" >Shop by catergory</h5>
        <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
-    <div class="drop-box-skin"  >
+    <div class="drop-box-skin" v-if="show_on" >
        <hr class="head-line"  />
        <div class="drop-box-body">
        

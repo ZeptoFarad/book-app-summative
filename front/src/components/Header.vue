@@ -161,12 +161,7 @@
         border-radius: 4px;
         flex: 7;
     }
-    .header-box2-catle:hover{
-        background-color: white;
-        color: black;
-    }
-  
-    .header-box2{
+   .header-box2{
         background-color:rgba(228, 205, 179, 1) ;
         margin: 0px;
         padding: 6px 6px 10px 17px;
@@ -214,7 +209,7 @@
             more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
             top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
             top_sellers:['Top seller book 1','Top seller book 2', 'Top seller book 3','Top seller book 4','Top seller book 5',],
-
+            upHere:true
         }
 
      }

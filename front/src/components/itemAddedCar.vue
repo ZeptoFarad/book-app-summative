@@ -1,6 +1,6 @@
 <template>
     <div class="item-added-box">
-       <div class="grey-back-gd"></div>
+       
        <div class="item-added-content">
            <div class="item-added-text">
              <p>YOUR ITEM WAS ADDED TO </p>
@@ -12,6 +12,7 @@
             <div class="checkout-button">Go to checkout</div>
            </div> 
        </div>
+       <div class="grey-back-gd"></div>
     </div>
 </template>
 <style scoped>
@@ -26,6 +27,7 @@
         margin: 5px;
         padding: 9px;
         border-radius: 8px;
+        cursor: pointer;
     }
     .checkout-button{
         background-color: #feb000;
@@ -33,16 +35,23 @@
         margin: 5px;
         padding: 9px;
         border-radius: 8px;
+        cursor: pointer;
     }
-
-    .item-added-box{
+    .grey-back-gd{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 9;
+    }
+    .item-added-content{
         position: fixed;
         text-align: center;
-        top: 39%; bottom: 25%; left: 15%; right: 15%;
+        top: 37%; bottom: 30%; left: 15%; right: 15%;
         border: 1px solid rgba(62, 26, 9, 1);
         width: fit-content;
         padding: 25px;
         z-index: 10;
+        background-color: white;
     }
     .item-added-box p{
         color:rgba(62, 26, 9, 1) ;

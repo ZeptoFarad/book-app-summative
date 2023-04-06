@@ -184,7 +184,9 @@
         margin: 0px 20px 0px 0px;
         display: block;
     }
-    .header-box2-
+    .header-box2-catle{
+        display: none;
+    }
     .search-box2{
     display: block;
         margin: 13px auto;

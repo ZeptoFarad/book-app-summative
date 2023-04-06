@@ -30,10 +30,10 @@
         </div>
     </div>
     <div class="header-box2">
-       <h5 class="header-box2-catle">Shop by catergory</h5>
+       <h5 class="header-box2-catle" >Shop by catergory</h5>
        <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
-    <div class="drop-box-skin">
+    <div class="drop-box-skin"  >
        <hr class="head-line"  />
        <div class="drop-box-body">
        
@@ -72,7 +72,6 @@
         background-color: white;
         border-radius: 0px 0px 8px 8px;
         max-height: 250px;
-        display: none;
     }
     .drop-box-body{
         display: flex;
@@ -168,10 +167,9 @@
         color:rgba(62, 26, 9, 1) ;
         max-width: 1440px;
         /* min-width: 320px; */
+    
     }
-    .search-box2{
-        display: none;
-    }
+    .search-box2{display: none;}
 }
 
 @media screen and (max-width:661px){
@@ -186,7 +184,7 @@
         margin: 0px 20px 0px 0px;
         display: block;
     }
-    .header-box2-catle{ display: none;}
+    .header-box2-
     .search-box2{
     display: block;
         margin: 13px auto;
@@ -209,7 +207,8 @@
             more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
             top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
             top_sellers:['Top seller book 1','Top seller book 2', 'Top seller book 3','Top seller book 4','Top seller book 5',],
-            upHere:true
+            upHere:true,
+            show_on:false
         }
 
      }

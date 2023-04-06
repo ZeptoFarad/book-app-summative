@@ -34,30 +34,34 @@
        <input type="text" placeholder="please enter your search book name or author name" class="search-box2">
     </div>
     <div class="drop-box-skin">
-       <div class="categorie-box">
-          <h5>TOP CATEGORIES</h5>
-            <ul>
-               <li v-for="top_cat in  top_cate">{{ top_cat }}</li>
-            </ul>
-       </div>
-       <div class="categorie-box">
-          <h5>MORE CATEGORIES</h5>
-            <ul>
-               <li v-for="more_cate in more_cates">{{ more_cate }}</li>
-            </ul>
-       </div>
-       <div class="categorie-box">
-          <h5>TOP AUTHORS</h5>
-            <ul>
-               <li v-for="top_author in  top_authors">{{ top_author }}</li>
-            </ul>
-       </div>
-       <div class="categorie-box">
-          <h5>TOP SELLERS</h5>
-            <ul>
-               <li v-for="top_seler in top_sellers">{{ top_seler }}</li>
-            </ul>
-       </div>
+       <hr class="head-line"  />
+       <div class="drop-box-body">
+       
+            <div class="categorie-box-skin">
+                <p>TOP CATEGORIES</p>
+                    <ul class="categorie-box">
+                    <li v-for="top_cat in  top_cate">{{ top_cat }}</li>
+                    </ul>
+            </div>
+            <div class="categorie-box-skin">
+                <p>MORE CATEGORIES</p>
+                    <ul class="categorie-box">
+                    <li v-for="more_cate in more_cates">{{ more_cate }}</li>
+                    </ul>
+            </div>
+            <div class="categorie-box-skin">
+                <p>TOP AUTHORS</p>
+                    <ul class="categorie-box">
+                    <li v-for="top_author in  top_authors">{{ top_author }}</li>
+                    </ul>
+            </div>
+            <div class="categorie-box-skin">
+                <p>TOP SELLERS</p>
+                    <ul class="categorie-box">
+                    <li v-for="top_seler in top_sellers">{{ top_seler }}</li>
+                    </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -65,9 +69,39 @@
 
 @media screen and (max-width:1440px){
     .drop-box-skin{
-        display: flex;
-        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 0px 0px 8px 8px;
+        max-height: 250px;
+        display: none;
     }
+    .drop-box-body{
+        display: flex;
+        justify-content: space-around;
+        padding: 35px;
+        gap: 5px;
+    }
+    .categorie-box-skin{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 6px;
+    }
+    .categorie-box-skin p{
+        font-family: Quicksand;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0px;
+        padding: 3px;
+    }
+    .categorie-box{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        max-height: 200px;
+        min-width: 100px;
+    }
+    li{padding: 4px; font-size: 12px;}
+    .head-line{ margin: 0px; border: 2.5px solid #feb000 ;}
 
     #logo1{ height: 60px;
         padding: 5px 5px 5px 0px;
@@ -127,7 +161,10 @@
         border-radius: 4px;
         flex: 7;
     }
-   
+    .header-box2-catle:hover{
+        background-color: white;
+        color: black;
+    }
   
     .header-box2{
         background-color:rgba(228, 205, 179, 1) ;
@@ -142,7 +179,8 @@
     }
 }
 
-@media screen and (max-width:620px){
+@media screen and (max-width:661px){
+    .drop-box-skin{display: none;}
     .header-box1{display: flex; }
     #logo1{height:65px; padding: 0px; }
     .search-box1{ display: none;}
@@ -175,15 +213,11 @@
             top_cate:['Top categorie 1', 'Top categorie 2','Top categorie 3','Top categorie 4','Top categorie 5'],
             more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
             top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
-            top_sellers:['Seller 1','Seller 2', 'Seller 3','Seller 4','seller 5',],
+            top_sellers:['Top seller book 1','Top seller book 2', 'Top seller book 3','Top seller book 4','Top seller book 5',],
 
         }
 
      }
      
    }
-</script>
-<script setup>
-     import basket  from '../assets/images/basket.svg';
-
 </script>

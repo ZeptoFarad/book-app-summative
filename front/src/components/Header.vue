@@ -75,6 +75,7 @@
         background-color: white;
         border-radius: 0px 0px 8px 8px;
         max-height: 250px;
+        position: fixed;
     }
     .drop-box-body{
         display: flex;

@@ -16,6 +16,7 @@
     </div>
 </template>
 <style scoped>
+@media screen and (max-width:1440px){
     .item-added-buttons{
         display: flex;
         justify-content: center;
@@ -47,7 +48,7 @@
     .item-added-content{
         position: fixed;
         text-align: center;
-        top: 37%; bottom: 30%; left: 15%; right: 15%;
+        top: 37%; bottom: 30%; left: 16%; right: 16%;
         border: 1px solid rgba(62, 26, 9, 1);
         width: fit-content;
         padding: 25px;
@@ -61,4 +62,42 @@
         font-size: 30px;
         margin: 21px;
     }
+}
+@media screen and (max-width:610px){
+    .item-added-content{
+        position: fixed;
+        text-align: center;
+        top: 40%; bottom: 31%; left: 15%; right: 15%;
+        border: 1px solid rgba(62, 26, 9, 1);
+        width: fit-content;
+        padding: 20px;
+        z-index: 10;
+        background-color: white;
+    }
+    .item-added-box p{
+        color:rgba(62, 26, 9, 1) ;
+        font-weight: bold;
+        font-style: Amatic SC;
+        font-size: 20px;
+        margin: 21px;
+    }
+    .continu-shopping-button{
+        background-color: rgba(62, 26, 9, 1);
+        color: white;
+        margin: 5px;
+        padding: 9px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .checkout-button{
+        background-color: #feb000;
+        color:black;
+        margin: 5px;
+        padding: 9px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
 </style>

@@ -36,11 +36,13 @@
     }
 
     .item-added-box{
+        position: fixed;
         text-align: center;
-        margin:130px auto;
+        top: 39%; bottom: 25%; left: 15%; right: 15%;
         border: 1px solid rgba(62, 26, 9, 1);
         width: fit-content;
         padding: 25px;
+        z-index: 10;
     }
     .item-added-box p{
         color:rgba(62, 26, 9, 1) ;

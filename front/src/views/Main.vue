@@ -1,9 +1,10 @@
 <script setup>
-import BookCard from './components/BookCard.vue'
-import MainFeatures from './components/MainFeatures.vue'
-import PopularCategories from './components/PopularCategories.vue'
-import WideImage from './components/WideImage.vue'
+  import BookCard from '../components/BookCard.vue'
+  import MainFeatures from '../components/MainFeatures.vue'
+  import PopularCategories from '../components/PopularCategories.vue'
+  import WideImage from '../components/WideImage.vue'
 </script>
+
 
 <template>
   <section class="main-features-section">
@@ -13,9 +14,8 @@ import WideImage from './components/WideImage.vue'
   <h1 class="main-h1-title">Latest Listings</h1>
 
   <section class="cards-section">
-    <BookCard  v-for="book in 8"/>
+    <BookCard />
   </section>
-
   <h1 class="main-h1-title">Popular Categories</h1>
   <section class="popular-categories-section">
     <PopularCategories />
@@ -24,7 +24,6 @@ import WideImage from './components/WideImage.vue'
   <section class="wide-image-section">
     <WideImage />
   </section>
-
 
 </template>
 
@@ -60,3 +59,10 @@ import WideImage from './components/WideImage.vue'
   }
 
 </style>
+
+
+
+
+
+
+

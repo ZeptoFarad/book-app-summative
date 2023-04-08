@@ -1,12 +1,11 @@
-const { Schema, model } = require("mongoose");
+import mongoose from "mongoose";
 
-const bookpost = new Schema({
-  _id: String,
+const bookpost = new mongoose.Schema({
   postTitle: String,
   author: String,
   price: Number,
   category: String,
-  yearPub: Decimal128,
+  yearPub: { type: mongoose.Types.Decimal128 },
   condition: String,
   searchTags: Array,
   listedDate: { type: Date, default: Date.now },
@@ -48,5 +47,5 @@ const bookpost = new Schema({
   }
 });
 
-const BookPost = model("BookPost", bookpost);
+const BookPost = mongoose.model("BookPost", bookpost);
 export default BookPost;

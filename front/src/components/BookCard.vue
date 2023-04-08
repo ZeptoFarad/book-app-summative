@@ -1,5 +1,5 @@
 <template>
-    <div class="book-card-wrapper">
+    <!-- <div class="book-card-wrapper">
         <div class="book-card-content">
             <div class="book-card-img-wrapper">
                 <img class="book-card-img" src="https://ubscan.co.nz/wp-content/uploads/9781681888866-1.jpg" alt="book_cover">
@@ -16,12 +16,31 @@
             </div>
             <button class="tertiary_button" id="button-full-width">Add to Basket</button>
         </div>
-        
+    </div> -->
+
+    <div class="book-card-wrapper">
+        <div class="book-card-content">
+            <div class="book-card-img-wrapper">
+                <img class="book-card-img" src="https://ubscan.co.nz/wp-content/uploads/9781681888866-1.jpg" alt="book_cover">
+            </div>
+            <div class="title-favourite">
+                <h3 class="title"></h3>
+                <img src="../assets/images/favourite-icon.svg" alt="">
+            </div>
+            <div class="book-info">
+                <h4></h4>
+                <h4></h4>
+                <h4></h4>
+                <h2 class="book-price">$25</h2>
+            </div>
+            <button class="tertiary_button" id="button-full-width">Add to Basket</button>
+        </div>
     </div>
+
+   
 </template>
 
 <style scoped>
-
 .book-card-wrapper{
     background-color: white;
     width: 272px;
@@ -77,5 +96,11 @@
 #button-full-width{
     width: 100%;
 }
-
 </style>
+
+
+
+
+
+
+

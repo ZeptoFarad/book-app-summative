@@ -48,12 +48,13 @@
     .item-added-content{
         position: fixed;
         text-align: center;
-        top: 37%; bottom: 30%; left: 16%; right: 16%;
+        top: 37%; left:32%; right: 32%;
         border: 1px solid rgba(62, 26, 9, 1);
-        width: fit-content;
         padding: 25px;
         z-index: 10;
+        width: fit-content;
         background-color: white;
+        height: fit-content;
     }
     .item-added-box p{
         color:rgba(62, 26, 9, 1) ;
@@ -63,13 +64,16 @@
         margin: 21px;
     }
 }
+
+
 @media screen and (max-width:610px){
     .item-added-content{
         position: fixed;
         text-align: center;
-        top: 40%; bottom: 31%; left: 15%; right: 15%;
+        top: 37%;  right:13%; left: 13%;
         border: 1px solid rgba(62, 26, 9, 1);
-        width: fit-content;
+        width:fit-content;
+        height: fit-content;
         padding: 20px;
         z-index: 10;
         background-color: white;
@@ -77,8 +81,8 @@
     .item-added-box p{
         color:rgba(62, 26, 9, 1) ;
         font-weight: bold;
-        font-style: Amatic SC;
-        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 23px;
         margin: 21px;
     }
     .continu-shopping-button{

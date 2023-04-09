@@ -12,13 +12,10 @@
         </div>
     </div>
 </template>
-<scrip>
-     export default {
-        data(){
-            shopping_cards:[],
-            shopping_card:{title:'', arthor:'', price:'', img:'', price:'',},
-            item_amount:''
-        }
-     }
-</script>
+<scrip setup>
+
+    
+</scrip>
+     
+
 

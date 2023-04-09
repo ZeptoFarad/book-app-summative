@@ -9,6 +9,7 @@ import itemAddedCarVue from './components/itemAddedCar.vue';
    </div>
   <div class="add-to-car-button">Add to Basket</div>
   <div class="added-item-car">
+  <!-- <img src="./assets/images/PeekabookLogo.svg" alt="" srcset=""> -->
     <itemAddedCarVue />
   </div>
 </template>

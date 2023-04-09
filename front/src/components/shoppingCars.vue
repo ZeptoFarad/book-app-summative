@@ -12,10 +12,15 @@
         </div>
     </div>
 </template>
-<scrip setup>
 
-    
-</scrip>
-     
+
+<script setup>
+    defineProps({
+          shoppingCardObj:{
+                 type: Object,
+                 required: true
+          }
+    })
+</script>    
 
 

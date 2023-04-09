@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const user = new mongoose.Schema({
+const comment = new mongoose.Schema({
   ownerid: String,
   bookpostid: String,
   content: String,
@@ -11,5 +11,5 @@ const user = new mongoose.Schema({
   }
 });
 
-const CreateUser = mongoose.model("CreateUser", user);
-export default CreateUser;
+const CreateComment = mongoose.model("CreateComment", comment);
+export default CreateComment;

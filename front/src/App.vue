@@ -1,6 +1,6 @@
 <script setup>
 import headerVue from './components/Header.vue'
-import itemAddedCarVue from './components/itemAddedCar.vue';
+import itemAddedCarVue from './components/itemAddedToCar.vue';
 </script>
 
 <template>

@@ -7,12 +7,12 @@
             <div class="modal-centered">
                 <h1>Login</h1>
                 <div class="input_box">
-                    <label class="" for="textInput1">Username</label>
-                    <input class="" id="textInput1" type="text" placeholder="" />
+                    <label class="" for="username">Username</label>
+                    <input class="" id="username" type="text" placeholder="Username" />
                 </div>
                 <div class="input_box">
-                    <label class="" for="textInput1">Password</label>
-                    <input class="" id="textInput1" type="text" placeholder="" />
+                    <label class="" for="password">Password</label>
+                    <input class="" id="password" type="text" placeholder="Password" />
                 </div>
                 <button class="tertiary_button">Login</button>
                 <h4>Don't have an account?<span class="sign-up">Sign Up</span></h4>

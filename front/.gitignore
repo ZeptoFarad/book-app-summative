@@ -28,4 +28,4 @@ coverage
 *.sw?
 
 #App.vue
-/font/App.vue
+/App.vue

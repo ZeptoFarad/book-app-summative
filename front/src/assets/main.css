@@ -203,9 +203,8 @@ p {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* height: 48px; */
+  align-items: center;
+  justify-content: center
   box-sizing: border-box;
 }
 button.primary_button:hover {
@@ -227,7 +226,6 @@ button.primary_button:hover {
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   align-items: center;
   justify-content: center;
-  height: 48px;
 }
 button.secondary_button:hover {
   background: var(--book_brown, darkbrown);

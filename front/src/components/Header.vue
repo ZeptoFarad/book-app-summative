@@ -3,14 +3,12 @@
         <div class="book-logo">
             <img src="../assets/images/headerlogo1.svg" alt="" srcset="">
             
- </div>
+        </div>
         <input type="text" placeholder="please enter your search book name or author name" class="search-box1">
         <h5 class="primary_button">My Account</h5>
         <h5 class="secondary_button">Sign Up</h5>
         <div class="header-manu-logo">
-            <svg  id="manu-logo" width="35" height="35" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 9H11.5M1 5H11.5M1 1H11.5" stroke="#FEF8F3" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <img src="../assets/images/manu.svg" alt="" srcset="">
         </div>
         <div class="shopping-car">
            <div class="basket">
@@ -107,8 +105,11 @@
     }
     .book-logo{
         flex: 3.5;
-        margin: 10px 0px 10px 0px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin:5px ;
         cursor: pointer;
+        padding-left: 13px;
     }
     .header-box1{
         background-color:rgba(62, 26, 9, 1) ;

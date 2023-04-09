@@ -8,10 +8,8 @@ import itemAddedCarVue from './components/itemAddedCar.vue';
      <headerVue />
    </div>
   <div class="add-to-car-button">Add to Basket</div>
-  <div class="added-item-car">
-  <div class="back">
-    <img src="./assets/images/basket.svg" alt="" srcset=""> 
-  </div>
+  <div class="bookAppBody">
+ 
  
     <itemAddedCarVue />
   </div>

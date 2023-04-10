@@ -29,7 +29,7 @@
                 </div>
               
             </div>
-           <div class="box-payment">
+           <div class="box-payment style3">
                <h3>You have 1 item in your cart:</h3>
                <div class="item-price-box">
                   <div class="item-name">Item</div>
@@ -46,11 +46,28 @@
                <div class="checkout-button">CHECKOUT</div>
            </div>
         </div>
+        <div class="box-payment2 style4">
+               <h3>You have 1 item in your cart:</h3>
+               <div class="item-price-box">
+                  <div class="item-name">Item</div>
+                  <div class="price1">$25</div>
+               </div>
+               <div class="item-price-box">
+                  <div class="item-name">Delevery</div>
+                  <div class="price1">$5</div>
+               </div>
+               <div class="item-price-box">
+                  <div class="item-name1">Total</div>
+                  <div class="price">$30</div>
+               </div>
+               <div class="checkout-button">CHECKOUT</div>
+           </div>
     
     </div>
     
 </template>
 <style scoped>
+.style4{ display:none}
 .style-button{
     display: none;
 }
@@ -113,7 +130,6 @@
     .box-skin{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
     .item-price-box{
         display: flex;
@@ -132,6 +148,44 @@
     .price{ color: red; padding-right: 30px;}
     .item-name1{color: red;}
     h1{margin-left:6%; margin-top:100px;}
+
+
+
+    @media screen and (max-width:683px){
+        .box-information{
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+        background-color: rgba(228, 205, 179, 1);
+        margin-left: 12%;
+        margin-right: 12%;
+        margin-top: 5%;
+        border-radius: 8px;
+        }
+        .box-payment{
+        width: 25%;
+        background-color: white;
+        margin-right:12%;
+        margin-top: 5%;
+        border-radius: 8px;
+        padding: 25px 25px 0px 25px;
+        border: 1px solid rgba(62, 26, 9, 1) ;
+        }
+       .style3{display: none;}
+      .style4{
+        display: block;
+       }
+      .box-payment2{
+        width: 50%;
+        background-color: white;
+        margin-left:20%;
+        margin-right: 20%;
+        margin-top: 3%;
+        border-radius: 8px;
+        padding: 25px 25px 0px 25px;
+        border: 1px solid rgba(62, 26, 9, 1) ;
+        }
+    }
 </style>
 
 

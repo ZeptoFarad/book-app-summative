@@ -32,32 +32,69 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eligendi harum expedita eius ullam rerum, aperiam sit! Deleniti totam unde rem error excepturi reiciendis officia eius recusandae similique aspernatur. Consectetur?</p>
             </div>
 
-            <div class="product-details">
-                <div class="box-1">
-                    <h3>Condition: <span class="regular-font">Good</span></h3>
-                    <h3>Language: <span class="regular-font">English</span></h3>
-                </div>
+            <div class="product-details-wrapper">
+                <h2>Product Details</h2>
+                <div class="product-details">
+                    <div class="box-1">
+                        <div class="row-flex">
+                            <h3>Condition:</h3>
+                            <p>Good</p>
+                        </div>
 
-                <div class="box-1">
-                    <h3>Condition: <span class="regular-font">Good</span></h3>
-                    <h3>Language: <span class="regular-font">English</span></h3>
-                </div>
+                        <div class="row-flex">
+                            <h3>Language:</h3>
+                            <p>English</p>
+                        </div>
+                    </div>
 
-                <div class="box-1">
-                    <h3>Condition: <span class="regular-font">Good</span></h3>
-                    <h3>Language: <span class="regular-font">English</span></h3>
-                </div>
+                    <div class="box-1">
+                        <div class="row-flex">
+                            <h3>Cover style:</h3>
+                            <p>Hard</p>
+                        </div>
 
-                <div class="box-1">
-                    <h3>Condition: <span class="regular-font">Good</span></h3>
-                    <h3>Language: <span class="regular-font">English</span></h3>
+                        <div class="row-flex">
+                            <h3>Publish year:</h3>
+                            <p>2022</p>
+                        </div>
+                    </div>
+
+                    <div class="box-1">
+                        <div class="row-flex">
+                            <h3>First edition:</h3>
+                            <p>No</p>
+                        </div>
+
+                        <div class="row-flex">
+                            <h3>Limited edition:</h3>
+                            <p>No</p>
+                        </div>
+                    </div>
+
+                    <div class="box-1">
+                        <div class="row-flex">
+                            <h3>Signed by author:</h3>
+                            <p>No</p>
+                        </div>
+
+                        <div class="row-flex">
+                            <h3>Delivery method:</h3>
+                            <p>Pickup</p>
+                        </div>
+                    </div>
+
+
+
+                    
                 </div>
             </div>
+            
         </div>
     </div>
 </template>
 
 <style scoped>
+    /* BOOK WRAPPER */
     .book-description-page-wrapper{
         width: 90%;
         padding: 50px 20px;
@@ -96,30 +133,43 @@
         padding-bottom: 10px;
     }
 
-    .book-description > *{
+    .book-description > p:first-of-type{
         padding-bottom: 20px;
     }
 
+    h2{
+        padding: 18px 0;
+    }
+
+    .primary_button{
+        margin: 0;
+    }
+
+    /* PRODUCT DETAILS CSS */
     .product-details{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
-    .regular-font{
-        font-family: 'Quicksand_Regular';
-        font-weight: 400;
+
+    .box-1{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .row-flex{
+        flex: 1;
+        display: flex;
+    }
+
+    h3, p{
         font-size: 16px;
     }
 
-    h3{
-        font-size: 16px;
-    }
-
-    h3:first-child{
-        padding-bottom: 18px;
-    }
-
-    h2{
-        padding: 15px 0;
+    .row-flex > h3{
+        padding-bottom: 15px;
+        width: 150px;
     }
 
 </style>

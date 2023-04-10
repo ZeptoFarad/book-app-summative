@@ -10,14 +10,18 @@
                     <div class="card-information">
                     <h2>Title</h2>
                     <h5>Author</h5>
-                    <h5>Category</h5>
-                    <h5>Condition</h5>
+                    <h5 class="take-away1">Category</h5>
+                    <h5 class="take-away1">Condition</h5>
+                    <h2 class="add-in1">$25</h2>
+                    <div class="remove-button style-button">
+                        Remove
+                        </div>
                     </div>
               </div>
               <div class="price-part">
-                    <h2>$25</h2>
+                    <h2 class="take-away1">$25</h2>
                     <div class="button-skin">
-                        <div class="remove-button">
+                        <div class="remove-button style-button1">
                         Remove
                         </div>
                         <div class="space"></div>
@@ -26,7 +30,7 @@
               
             </div>
            <div class="box-payment">
-               <p>You have 1 item in your cart:</p>
+               <h3>You have 1 item in your cart:</h3>
                <div class="item-price-box">
                   <div class="item-name">Item</div>
                   <div class="price1">$25</div>
@@ -47,6 +51,10 @@
     
 </template>
 <style scoped>
+.style-button{
+    display: none;
+}
+    .add-in1{display: none;}
     .box-information{
         display: flex;
         justify-content: space-between;
@@ -93,7 +101,7 @@
         width: 15px;
     }
     .box-payment{
-        width: 23%;
+        width: 25%;
         background-color: white;
         margin-right:6%;
         margin-top: 5%;
@@ -105,6 +113,7 @@
     .box-skin{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     .item-price-box{
         display: flex;
@@ -119,7 +128,7 @@
         padding: 10px;
         border-radius: 8px;
     }
-    .price1{ color: rgb(64, 115, 149); padding-right: 30px;}
+    .price1{ padding-right: 30px;}
     .price{ color: red; padding-right: 30px;}
     .item-name1{color: red;}
     h1{margin-left:6%; margin-top:100px;}

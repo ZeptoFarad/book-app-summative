@@ -171,7 +171,7 @@ h2 {
 h3 {
   font-family: 'Quicksand_SemiBold';
   font-weight: 600;
-  font-size: 16px;
+  font-size: clamp(16px, 3vw, 24px);
 }
 h4 {
   font-family: 'Quicksand_Regular';
@@ -197,14 +197,15 @@ p {
   border: solid 2px var(--book_orange);
   border-radius: 8px;
   padding: 12px 20px;
-  display: flex;
+  /* display: flex; */
   color: var(--book_brown, saddlebrown);
-  text-align: left;
+  /* text-align: left; */
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   align-items: center;
   justify-content: center;
+  height: 48px;
   box-sizing: border-box;
 }
 button.primary_button:hover {
@@ -226,6 +227,7 @@ button.primary_button:hover {
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   align-items: center;
   justify-content: center;
+  height: 48px;
 }
 button.secondary_button:hover {
   background: var(--book_brown, darkbrown);

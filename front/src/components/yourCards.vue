@@ -13,15 +13,18 @@
                     <h5 class="take-away1">Category</h5>
                     <h5 class="take-away1">Condition</h5>
                     <h2 class="add-in1">$25</h2>
-                    <div class="remove-button style-button">
-                        Remove
-                        </div>
+                    
                     </div>
               </div>
               <div class="price-part">
+                  <div>
                     <h2 class="take-away1">$25</h2>
+                    <div class="space"></div>
+                  </div>
+                    
+                    
                     <div class="button-skin">
-                        <div class="remove-button style-button1">
+                        <div class="remove-button">
                         Remove
                         </div>
                         <div class="space"></div>
@@ -118,7 +121,7 @@
         width: 15px;
     }
     .box-payment{
-        width: 25%;
+        width: fit-content;
         background-color: white;
         margin-right:6%;
         margin-top: 5%;
@@ -155,7 +158,7 @@
         .box-information{
         display: flex;
         justify-content: space-between;
-        width: 75vw;
+        width: fit-content;
         background-color: rgba(228, 205, 179, 1);
         margin-left: 12%;
         margin-right: 12%;
@@ -163,7 +166,7 @@
         border-radius: 8px;
         }
         .box-payment{
-        width: 25%;
+        width: fit-content;
         background-color: white;
         margin-right:12%;
         margin-top: 5%;
@@ -176,7 +179,7 @@
         display: block;
        }
       .box-payment2{
-        width: 50%;
+        width: fit-content;
         background-color: white;
         margin-left:20%;
         margin-right: 20%;
@@ -184,6 +187,60 @@
         border-radius: 8px;
         padding: 25px 25px 0px 25px;
         border: 1px solid rgba(62, 26, 9, 1) ;
+        }
+        .card-pic img{
+            height: 150px;
+        }
+    }
+    @media screen and (max-width:448px){
+        .box-information{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(228, 205, 179, 1);
+        width: 99vw;
+        margin-left: 1px;
+        margin-right: 1px;
+        }
+        .box-payment{
+        width: 45%;
+        background-color: white;
+        margin-right:12%;
+        margin-top: 5%;
+        border-radius: 8px;
+        padding: 25px 25px 0px 25px;
+        border: 1px solid rgba(62, 26, 9, 1) ;
+        }
+       .style3{display: none;}
+      .style4{
+        display: block;
+       }
+      .box-payment2{
+        width: 65vw;
+        background-color: white;
+        margin-left:16%;
+        margin-right: 15%;
+        margin-top: 3%;
+        border-radius: 8px;
+        padding: 25px 25px 0px 25px;
+        border: 1px solid rgba(62, 26, 9, 1) ;
+        }
+        .card-pic img{
+            height: 100px;
+        }
+        .take-away1{
+            display: none;
+        }
+        .style-button1{
+            display: none;
+        }
+        .style-button{
+            display: block;
+        }
+        h1{
+             text-align: center;
+            margin-top:60px;}
+        .add-in1{
+            display: block;
         }
     }
 </style>

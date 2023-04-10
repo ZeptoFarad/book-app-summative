@@ -73,6 +73,7 @@
         justify-content: space-around;
         padding: 35px;
         gap: 5px;
+        font-family: 'Quicksand_SemiBold';
     }
     .categorie-box-skin{
         display: grid;

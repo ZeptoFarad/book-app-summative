@@ -14,7 +14,7 @@
       @progress="onProgress"
       @slidechange="onSlideChange"
     >
-      <swiper-slide v-for="slide in slides">
+      <swiper-slide v-for="slide in slides" class="img-wrapper">
         <img :src="slide.img" alt="">
       </swiper-slide>
     </swiper-container>
@@ -64,12 +64,17 @@
   </script>
   
   <style scoped>
-  #container{
-    max-width: 1400px;
-  }
-  
-  img{
-    width: 100%;
-    height: 100%;
-  }
+    #container{
+      max-width: 1400px;
+    }
+    
+    .img-wrapper{
+      width: 800px;
+      height: 300px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>

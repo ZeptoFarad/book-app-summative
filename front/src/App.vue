@@ -1,7 +1,11 @@
+<script setup>
+  import yourCards from './components/yourCards.vue';
+</script>
+
 <template>
 
-  <div>
-   
+  <div class="your-card-area" >
+    <yourCards />
   </div>
 </template>
 

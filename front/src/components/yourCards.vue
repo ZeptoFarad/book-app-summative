@@ -53,7 +53,7 @@
         width: 53vw;
         background-color: rgba(228, 205, 179, 1);
         margin-left: 6%;
-        margin-top: 7%;
+        margin-top: 5%;
         border-radius: 8px;
         
     }
@@ -96,7 +96,7 @@
         width: 23%;
         background-color: white;
         margin-right:6%;
-        margin-top: 7%;
+        margin-top: 5%;
         border-radius: 8px;
         padding: 25px 25px 0px 25px;
         border: 1px solid rgba(62, 26, 9, 1) ;
@@ -119,9 +119,10 @@
         padding: 10px;
         border-radius: 8px;
     }
-    .price1{ color: rgb(64, 115, 149);}
-    .price{ color: red;}
+    .price1{ color: rgb(64, 115, 149); padding-right: 30px;}
+    .price{ color: red; padding-right: 30px;}
     .item-name1{color: red;}
+    h1{margin-left:6%; margin-top:100px;}
 </style>
 
 

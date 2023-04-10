@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
     <div class="your-card-box">
         <h1>YOUR CART</h1>
         <div class="box-skin">
@@ -38,3 +39,7 @@
         background-color: rgba(228, 205, 179, 1);
     }
 </style>
+=======
+    your card
+</template>
+>>>>>>> Stashed changes

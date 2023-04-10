@@ -78,7 +78,7 @@
     .box-information{
         display: flex;
         justify-content: space-between;
-        width: 53vw;
+        width: 48vw;
         background-color: rgba(228, 205, 179, 1);
         margin-left: 6%;
         margin-top: 5%;
@@ -121,9 +121,9 @@
         width: 15px;
     }
     .box-payment{
-        width: fit-content;
+        width:20vw;
         background-color: white;
-        margin-right:6%;
+        margin-right:10%;
         margin-top: 5%;
         border-radius: 8px;
         padding: 25px 25px 0px 25px;
@@ -143,7 +143,7 @@
     .checkout-button{
         background-color: rgba(254, 176, 0, 1);
         width: fit-content;
-        margin: 6px auto;
+        margin: 9px auto;
         padding: 10px;
         border-radius: 8px;
     }
@@ -156,14 +156,14 @@
 
     @media screen and (max-width:690px){
         h1{
-            margin-left: 29%;
+            margin-left: 31%;
         }
         .box-information{
         display: flex;
         justify-content: space-between;
         width: fit-content;
         background-color: rgba(228, 205, 179, 1);
-        margin-left: 19%;
+        margin-left: 16%;
         margin-right: 19%;
         margin-top: 5%;
         border-radius: 8px;
@@ -184,7 +184,7 @@
       .box-payment2{
         width: fit-content;
         background-color: white;
-        margin-left:20%;
+        margin-left:23%;
         margin-right: 20%;
         margin-top: 3%;
         border-radius: 8px;
@@ -195,12 +195,12 @@
             height: 150px;
         }
     }
-    @media screen and (max-width:447px){
+    @media screen and (max-width:448px){
         .box-information{
         display: flex;
         justify-content: space-between;
         background-color: rgba(228, 205, 179, 1);
-        width: 91vw;
+        width: 100vw;
         margin-left: 0px;
         margin-right: 1px;
         border-radius: 1px;
@@ -219,13 +219,15 @@
         display: block;
        }
       .box-payment2{
-        width:fit-content;
+        width:82%;
+        margin-left: 0.5%;
+        margin-right: 0.1%;
         background-color: white;
         margin-top: 3%;
-        margin-left: 15%;
         border-radius: 8px;
         padding: 25px 25px 0px 25px;
         border: 1px solid rgba(62, 26, 9, 1) ;
+        text-align: center;
         }
         .card-pic img{
             height: 100px;
@@ -245,6 +247,8 @@
         .add-in1{
             display: block;
         }
+        
+        .item-price-box{ padding: 10px 10px 10px 24px;}
     }
 </style>
 

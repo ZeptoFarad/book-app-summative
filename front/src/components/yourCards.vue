@@ -154,14 +154,17 @@
 
 
 
-    @media screen and (max-width:683px){
+    @media screen and (max-width:690px){
+        h1{
+            margin-left: 29%;
+        }
         .box-information{
         display: flex;
         justify-content: space-between;
         width: fit-content;
         background-color: rgba(228, 205, 179, 1);
-        margin-left: 12%;
-        margin-right: 12%;
+        margin-left: 19%;
+        margin-right: 19%;
         margin-top: 5%;
         border-radius: 8px;
         }

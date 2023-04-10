@@ -5,7 +5,7 @@
            <div class="box-information">
               <div class="card-pic-right">
                     <div class="card-pic">
-                    <img src="../assets/images/YoCardImg.jpg" alt="" height="170px">
+                    <img src="../assets/images/YoCardImg.jpg" alt="" height="190px">
                     </div>
                     <div class="card-information">
                     <h2>Title</h2>
@@ -24,9 +24,9 @@
                     
                     
                     <div class="button-skin">
-                        <div class="remove-button">
+                        <h3 class="remove-button">
                         Remove
-                        </div>
+                        </h3>
                         <div class="space"></div>
                     </div>
                 </div>
@@ -35,33 +35,33 @@
            <div class="box-payment style3">
                <h3>You have 1 item in your cart:</h3>
                <div class="item-price-box">
-                  <div class="item-name">Item</div>
-                  <div class="price1">$25</div>
+                  <h4 class="item-name">Item</h4>
+                  <h4 class="price1">$25</h4>
                </div>
                <div class="item-price-box">
-                  <div class="item-name">Delevery</div>
-                  <div class="price1">$5</div>
+                  <h4 class="item-name">Delevery</h4>
+                  <h4 class="price1">$5</h4>
                </div>
                <div class="item-price-box">
-                  <div class="item-name1">Total</div>
-                  <div class="price">$30</div>
+                  <h4 class="item-name1">Total</h4>
+                  <h4 class="price">$30</h4>
                </div>
-               <div class="checkout-button">CHECKOUT</div>
+               <h3 class="checkout-button">CHECKOUT</h3>
            </div>
         </div>
         <div class="box-payment2 style4">
                <h3>You have 1 item in your cart:</h3>
                <div class="item-price-box">
-                  <div class="item-name">Item</div>
-                  <div class="price1">$25</div>
+                  <h4 class="item-name">Item</h4>
+                  <h4 class="price1">$25</h4>
                </div>
                <div class="item-price-box">
-                  <div class="item-name">Delevery</div>
-                  <div class="price1">$5</div>
+                  <h4 class="item-name">Delevery</h4>
+                  <h4 class="price1">$5</h4>
                </div>
                <div class="item-price-box">
-                  <div class="item-name1">Total</div>
-                  <div class="price">$30</div>
+                  <h4 class="item-name1">Total</h4>
+                  <h4 class="price">$30</h4>
                </div>
                <div class="checkout-button">CHECKOUT</div>
            </div>
@@ -78,9 +78,9 @@
     .box-information{
         display: flex;
         justify-content: space-between;
-        width: 48vw;
+        width: 53vw;
         background-color: rgba(228, 205, 179, 1);
-        margin-left: 6%;
+        margin-left: 8%;
         margin-top: 5%;
         border-radius: 8px;
         
@@ -102,6 +102,7 @@
         padding: 5px 10px 5px 10px;
         border-radius: 5px;
         margin-bottom: 15px;
+        font-family: Quick;
     }
     .price-part{
       display: flex;
@@ -123,7 +124,7 @@
     .box-payment{
         width:20vw;
         background-color: white;
-        margin-right:10%;
+        margin-right:8%;
         margin-top: 5%;
         border-radius: 8px;
         padding: 25px 25px 0px 25px;
@@ -150,7 +151,7 @@
     .price1{ padding-right: 30px;}
     .price{ color: red; padding-right: 30px;}
     .item-name1{color: red;}
-    h1{margin-left:6%; margin-top:100px;}
+    h1{margin-left:8%; margin-top:100px;}
 
 
 

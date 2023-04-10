@@ -9,17 +9,20 @@
                     </div>
                     <div class="card-information">
                     <h2>Title</h2>
-                    <h3>Author</h3>
-                    <h3>Category</h3>
-                    <h3>Condition</h3>
+                    <h5>Author</h5>
+                    <h5>Category</h5>
+                    <h5>Condition</h5>
                     </div>
               </div>
               <div class="price-part">
-                <h2>$25</h2>
-                <div class="remove-button">
-                    Remove
+                    <h2>$25</h2>
+                    <div class="button-skin">
+                        <div class="remove-button">
+                        Remove
+                        </div>
+                        <div class="space"></div>
+                    </div>
                 </div>
-              </div>
               
             </div>
            <div class="box-payment">
@@ -39,6 +42,7 @@
         margin-left: 3%;
         margin-top: 5%;
         border-radius: 8px;
+        
     }
     .card-pic-right{
         display: flex;
@@ -56,15 +60,26 @@
         width: fit-content;
         padding: 5px 10px 5px 10px;
         border-radius: 5px;
+        margin-bottom: 15px;
     }
     .price-part{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
     }
     .price-part h2{
-        padding-top: 10px;
+        padding-top: 15px;
+        text-align: end;
+        padding-right: 5px;
     }
+    .button-skin{
+        display: flex;
+    }
+    .space{
+        width: 15px;
+    }
+    
 </style>
 
 

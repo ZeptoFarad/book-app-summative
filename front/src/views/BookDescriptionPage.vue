@@ -1,7 +1,13 @@
+<script setup>
+    import SliderVue from '../components/Slider.vue'
+
+</script>
+
 <template>
+
     <div class="book-description-page-wrapper">
-        <div class="carousel">
-            <img class="carousel-slide" src="../assets/images/collector-book-img.jpeg" alt="">
+        <div class="slider">
+            <SliderVue />
         </div>
         
 

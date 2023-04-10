@@ -1,11 +1,9 @@
+<script setup>
+import headerVue from "./components/Header.vue";
+</script>
+
 <template>
-
-  <div>
-   
-  </div>
+  <header>
+    <headerVue />
+  </header>
 </template>
-
-
-
-
-

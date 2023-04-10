@@ -1,6 +1,7 @@
 <script setup>
     import SliderVue from '../components/Slider.vue'
-
+    import QuestionsAnswersVue from '../components/QuestionsAnswers.vue'
+    
 </script>
 
 <template>
@@ -88,10 +89,9 @@
                             <p>Pickup</p>
                         </div>
                     </div>
-
-
-
-                    
+                </div>
+                <div class="questions-answers-section">
+                    <QuestionsAnswersVue />
                 </div>
             </div>
             

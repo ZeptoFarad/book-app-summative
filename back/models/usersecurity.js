@@ -7,5 +7,5 @@ const security = new mongoose.Schema({
   islogged: Boolean
 });
 
-const usersecurity = mongoose.model("usersecurity", security);
-export default usersecurity;
+const UserSecurity = mongoose.model("usersecurity", security);
+export default UserSecurity;

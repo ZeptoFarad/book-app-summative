@@ -7,6 +7,7 @@ import mongoose from "mongoose";
 // Mongoose schema imports
 import BookPost from "./models/bookpost.js";
 import CreateUser from "./models/createuser.js";
+import UserSecurity from "./models/usersecurity.js";
 
 let app = express();
 const port = 3000;
@@ -40,6 +41,7 @@ app.post("/editbook", async (req, res) => {
 //# Note: response is updside down
 app.get("/getbookdata", async (req, res) => {
   let books = await BookPost.find({}); // Put filters in these brackets to filter result
+  console.log("Request Received");
   await res.send(books);
 });
 
@@ -50,11 +52,23 @@ app.get("/getbookdata", async (req, res) => {
 //Signup user
 app.post("/signup", async (req, res) => {
   //Check if user email exists
-  const checker = await BookPost.find({ email: req.body.user.email }); // When adding email create code to make it toLowercase()
+  const { body } = await req;
+  console.log(body.user.email);
+  let useremail = toString(body.user.email);
+  const checker = await CreateUser.find({ email: "bobbob@gmail.com" }); // When adding email create code to make it toLowercase()
+  console.log(checker);
+
   if (checker.length > 0) res.send({ Error: "User Already Exists" });
   else {
     const { body } = await req;
     const newUser = await CreateUser.create(body.user);
+    //Create SecurityDB document
+    const createsecurity = await UserSecurity.create({
+      password: body.security.password,
+      username: body.security.username,
+      userid: newUser._id,
+      islogged: false
+    });
     await res.send(newUser);
   }
 });

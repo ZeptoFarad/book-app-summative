@@ -5,7 +5,7 @@
            <div class="box-information">
               <div class="card-pic-right">
                     <div class="card-pic">
-                    <img src="../assets/images/YoCardImg.jpg" alt="" height="210px">
+                    <img src="../assets/images/YoCardImg.jpg" alt="" height="170px">
                     </div>
                     <div class="card-information">
                     <h2>Title</h2>
@@ -26,7 +26,20 @@
               
             </div>
            <div class="box-payment">
-           
+               <p>You have 1 item in your cart:</p>
+               <div class="item-price-box">
+                  <div class="item-name">Item</div>
+                  <div class="price1">$25</div>
+               </div>
+               <div class="item-price-box">
+                  <div class="item-name">Delevery</div>
+                  <div class="price1">$5</div>
+               </div>
+               <div class="item-price-box">
+                  <div class="item-name1">Total</div>
+                  <div class="price">$30</div>
+               </div>
+               <div class="checkout-button">CHECKOUT</div>
            </div>
         </div>
     
@@ -37,10 +50,10 @@
     .box-information{
         display: flex;
         justify-content: space-between;
-        width: 55vw;
+        width: 53vw;
         background-color: rgba(228, 205, 179, 1);
-        margin-left: 3%;
-        margin-top: 5%;
+        margin-left: 6%;
+        margin-top: 7%;
         border-radius: 8px;
         
     }
@@ -79,7 +92,36 @@
     .space{
         width: 15px;
     }
-    
+    .box-payment{
+        width: 23%;
+        background-color: white;
+        margin-right:6%;
+        margin-top: 7%;
+        border-radius: 8px;
+        padding: 25px 25px 0px 25px;
+        border: 1px solid rgba(62, 26, 9, 1) ;
+
+    }
+    .box-skin{
+        display: flex;
+        justify-content: space-between;
+    }
+    .item-price-box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        margin-bottom: 5px;
+    }
+    .checkout-button{
+        background-color: rgba(254, 176, 0, 1);
+        width: fit-content;
+        margin: 6px auto;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .price1{ color: rgb(64, 115, 149);}
+    .price{ color: red;}
+    .item-name1{color: red;}
 </style>
 
 

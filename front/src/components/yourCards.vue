@@ -5,7 +5,7 @@
            <div class="box-information">
               <div class="card-pic-right">
                     <div class="card-pic">
-                    <img src="" alt="">
+                    <img src="../assets/images/YoCardImg.jpg" alt="" height="210px">
                     </div>
                     <div class="card-information">
                     <h2>Title</h2>
@@ -34,8 +34,36 @@
     .box-information{
         display: flex;
         justify-content: space-between;
-        width: 65vw;
+        width: 55vw;
         background-color: rgba(228, 205, 179, 1);
+        margin-left: 3%;
+        margin-top: 5%;
+        border-radius: 8px;
+    }
+    .card-pic-right{
+        display: flex;
+        margin: 15px;
+    }
+    .card-information{
+        margin-left: 10px;
+    }
+    .card-pic img{
+        border-radius: 10px;
+    }
+    .remove-button{
+        background-color:rgba(62, 26, 9, 1) ;
+        color: whitesmoke;
+        width: fit-content;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+    }
+    .price-part{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .price-part h2{
+        padding-top: 10px;
     }
 </style>
 

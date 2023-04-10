@@ -1,5 +1,5 @@
 <template>
-    <swiper-container id="container" 
+    <swiper-container 
       :slides-per-view="3"
       :space-between="spaceBetween"
       :centered-slides="true"
@@ -64,9 +64,7 @@
   </script>
   
   <style scoped>
-    #container{
-      max-width: 1400px;
-    }
+
     
     .img-wrapper{
       width: 800px;

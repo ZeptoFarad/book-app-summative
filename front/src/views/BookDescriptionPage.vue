@@ -104,12 +104,12 @@
     .book-description-page-wrapper{
         width: 90%;
         padding: 50px 20px;
-        background-color: blue;
+        /* background-color: blue; */
     }
     .book-content{
         padding: 20px 0;
         color: var(--book_brown);
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
     }
     .carousel{
         max-width: 1400px;

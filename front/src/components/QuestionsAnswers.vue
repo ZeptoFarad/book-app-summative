@@ -2,7 +2,7 @@
     <div class="questions-answers-wrapper">
         <div class="title-flex">
             <h2>Questions</h2>
-            <button class="tertiary_button">Ask a Question</button>
+            <button class="tertiary_button" @click="">Ask a Question</button>
         </div>
 
         <div class="question-wrapper">

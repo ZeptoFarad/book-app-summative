@@ -90,12 +90,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="questions-answers-section">
-                    <QuestionsAnswersVue />
-                </div>
             </div>
-            
+
+            <div class="questions-answers-section">
+                    <QuestionsAnswersVue />
+            </div>
         </div>
+            
+        
     </div>
 </template>
 
@@ -152,6 +154,10 @@
     }
 
     /* PRODUCT DETAILS CSS */
+
+    .product-details-wrapper{
+        padding: 20px 0;
+    }
     .product-details{
         display: flex;
         justify-content: space-between;

@@ -1,4 +1,4 @@
-<script>
+<script setup>
    import BookDescription from './views/BookDescriptionPage.vue'
 </script>
 

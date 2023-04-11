@@ -3,6 +3,7 @@
         <div class="list_a_book_title">
             <h1>List a Book:</h1>
         </div>
+
         <div class="book_details">
             <div class="book_details_header">
             <h2>Book Details:</h2>
@@ -26,12 +27,11 @@
                             <div class="input_box book_category_input">
                                 <!-- Requires drop down -->
                                 <label for="bookCategory">Book Category</label>
-                                <input type="text" id="bookCategory" name="bookCategory" value="Select category">
-                                <ul class="book_category_links">
-                                    <li><h4>Option 1</h4></li>
-                                    <li><h4>Option 2</h4></li>
-                                    <li><h4>Option 3</h4></li>
-                                </ul>
+                                <select id="bookCategory" name="bookCategory" value="Select category">
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                </select>
                             </div>
                             <div class="input_box condition_input">
                                 <!-- Requires drop down -->
@@ -123,6 +123,7 @@
                 </div>
             </div> 
         </div>
+
         <div class="search_tags">
                 <div class="search_tags_header">
                     <h2>Search Tags:</h2>
@@ -133,10 +134,18 @@
                 </div>
                 <label for="suggested_tags">Suggested:</label>
                 <div class="suggested_tags">
-                <h4>Testing</h4>
-                <button></button>
+                    <button class="suggested_btn">SciFi</button>
+                    <button class="suggested_btn">Fantasy</button>
+                    <button class="suggested_btn">Romance</button>
+                    <button class="suggested_btn">Science</button>
+                    <button class="suggested_btn">Horror</button>
+                    <button class="suggested_btn">Nature</button>
+                    <button class="suggested_btn">Mystery</button>
+                    <button class="suggested_btn">Poetry</button>
+                    
                 </div>
         </div>
+
         <div class="shipping_and_payment">
                 <div class="shipping_and_payment_header">
                     <h2>Shipping and Payment:</h2>
@@ -174,6 +183,7 @@
                             </div>
                 </div>
         </div>
+
         <div class="list_a_book_buttons">
             <button class="primary_button">Post</button>
         </div>
@@ -189,7 +199,17 @@
         flex-direction: column;
         align-items: center;
     }
-    .list_a_book_title {width: 80vw;}
+    .book_category_input select {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--book_brown, darkbrown);
+        margin-bottom: 1.5rem;
+        border: 2px var(--book_brown, darkbrown) solid;
+        border-radius: 10px;
+        padding: 0.5rem;
+        }
+    .list_a_book_title {width: 80vw; margin-bottom: 2vw;}
     .book_details_header, .add_images_header, .search_tags_header, .shipping_and_payment_header {width: 80vw; margin-left: 10vw; margin-top: 4vw; margin-bottom: 2vw;}
     .book_details, .add_images, .search_tags, .shipping_and_payment {
             background-color: var(--book_wheat);
@@ -198,11 +218,11 @@
             width: 80vw;
             align-items: center;
             margin: 10px;
+            border-radius: 10px;
             
     }
-            label {padding-bottom: 5px;}
+            
             /* .first_edition {padding-top: 10px;} */
-            .list_a_book_buttons {width: 80vw; display: flex; justify-content: flex-end;}
             .book_details_inputs {
                 display: flex;
                 flex-direction: column;
@@ -226,11 +246,16 @@
                 padding: 3px;
                 transform: rotate(45deg);
             } */
-            .condition_links, .book_category_links, .cover_style_links, .language_links {display: none;}
+            /* .condition_links, .book_category_links, .cover_style_links, .language_links {display: none;}
             .condition:hover > .condition_links{display: block;}
             .book_category:hover > .book_category_links{display: block;}
             .cover_style:hover > .cover_style_links{display: block;}
-            .language:hover > .language_links{display: block;}
+            .language:hover > .language_links{display: block;} */
+        
+        
+        
+    
+    
     .add_images_wrapper {
         display: flex;
         flex-direction: row;
@@ -240,12 +265,51 @@
     .add_images_inputs {
         width: 16vw;
     }
+    
+    
+    
     .search_tags_inputs {
         width: 70vw;
     }
+    .suggested_btn {
+            height: 20px; 
+            border-radius: 25px;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--book_brown, darkbrown);
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+    }
+    .suggested_tags {
+        width: 70vw; 
+        display: flex; 
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+            
+    
+    
     .shipping_and_payment_inputs {
         width: 70vw;
         display: flex;
+    }
+    
+    
+    .list_a_book_buttons {width: 80vw; display: flex; justify-content: flex-end;}
+
+    h1 {
+        font-size: clamp(52px, 12vw, 64px);
+    }
+    label {
+            font-family: 'Quicksand', sans-serif;
+            color: var(--book_brown, darkbrown);
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+            padding-bottom: 5px;
     }
         
     
@@ -263,7 +327,14 @@
             }
             .add_images_inputs {
                 width: 70vw;
-            }    
+            }
+            .book_details, .add_images, .search_tags, .shipping_and_payment {
+            border-radius: 0;
+            width: 100vw;
+            margin: 10px;
+            }
+            .list_a_book_title {display: flex; justify-content: center; }
+              
     }
 
 

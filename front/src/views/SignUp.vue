@@ -275,7 +275,13 @@ export default {
         this.inputError = true;
         this.usernameError = true;
       } else this.usernameCorrect = true;
-      if (this.usernameCorrect) {
+      if (
+        this.usernameCorrect &&
+        this.firstnameCorrect &&
+        this.lastnameCorrect &&
+        this.emailCorrect &&
+        this.passwordCorrect
+      ) {
         // Post to backend and check if account email exists
         this.formbody = JSON.stringify({
           user: {
@@ -290,7 +296,7 @@ export default {
         });
         ///////////////////////////////////////////////////////
         let data;
-        console.log(this.formbody);
+
         fetch("http://localhost:3000/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -298,11 +304,16 @@ export default {
         })
           .then((response) => response.json())
           .then((data) => {
-            if (data.reply == "Success") {
+            console.log(data.Reply);
+            if (data.Reply == "Success") {
               console.log("User Created Successfully");
+              // Belen add router here //
             }
-            if (data.reply == "Failed") {
+            if (data.Reply == "Failed") {
               console.log("Adding User Failed");
+              this.inputError = true;
+              this.message =
+                "User Email Already Exists \n Please login or use a different Email";
             }
           });
       }

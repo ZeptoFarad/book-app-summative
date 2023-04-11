@@ -69,11 +69,12 @@ app.post("/addcomment", async (req, res) => {
 app.post("/signup", async (req, res) => {
   //Check if user email exists
   const { body } = await req;
+  console.log(body);
 
   let useremail = toString(body.user.email);
   const checker = await CreateUser.find({ email: "bobbob@gmail.com" }); // When adding email create code to make it toLowercase()
-
-  if (checker.length > 0) res.send({ Error: "User Already Exists" });
+  console.log(checker);
+  if (checker.length > 0) res.send(JSON.stringify({ Reply: "Failed" }));
   else {
     const { body } = await req;
     const newUser = await CreateUser.create(body.user);
@@ -84,7 +85,7 @@ app.post("/signup", async (req, res) => {
       userid: newUser._id,
       islogged: true
     });
-    await res.send({ ok: "1" });
+    await res.send({ Reply: "Success" });
   }
 });
 

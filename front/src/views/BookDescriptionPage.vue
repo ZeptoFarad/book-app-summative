@@ -10,11 +10,10 @@
         <div class="slider">
             <SliderVue />
         </div>
-        
-
+    
         <div class="book-content">
             <div class="title-button-flex">
-                <h2>Title</h2>
+                <h2 class="book-title">Title</h2>
                 <div class="favourite-button-flex">
                     <div class="-favourite-icon-wrapper">
                         <img src="../assets/images/favourite-icon.svg" alt="">
@@ -90,12 +89,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="questions-answers-section">
-                    <QuestionsAnswersVue />
-                </div>
             </div>
-            
+
+            <div class="questions-answers-section">
+                    <QuestionsAnswersVue />
+            </div>
         </div>
+            
+        
     </div>
 </template>
 
@@ -110,16 +111,6 @@
         padding: 20px 0;
         color: var(--book_brown);
         /* background-color: aquamarine; */
-    }
-    .carousel{
-        max-width: 1400px;
-        height: 400px;
-    }
-
-    .carousel-slide{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .title-button-flex, .author-tags-price-wrapper{
@@ -151,7 +142,15 @@
         margin: 0;
     }
 
+    .book-title{
+        padding: 0;
+    }
+
     /* PRODUCT DETAILS CSS */
+
+    .product-details-wrapper{
+        padding: 20px 0;
+    }
     .product-details{
         display: flex;
         justify-content: space-between;
@@ -176,6 +175,14 @@
     .row-flex > h3{
         padding-bottom: 15px;
         width: 150px;
+    }
+
+    /* MEDIA QUERY */
+
+    @media (max-width: 500px){
+        .product-details{
+            flex-direction: column;
+        }
     }
 
 </style>

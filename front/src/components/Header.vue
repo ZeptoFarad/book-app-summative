@@ -173,7 +173,7 @@
     .secondary_button{ display: none;}
     .shopping-car{ display:none;}
     .header-manu-logo{ 
-        margin: 0px 20px 0px 0px;
+        margin-right: 6px;
         display: block;
     }
     .header-box2-catle{
@@ -187,6 +187,14 @@
         text-align: end;
         border-radius: 6px;
         border: 1px solid whitesmoke;
+    }
+    .book-logo{
+        flex: 3.5;
+        margin-left: 2px;
+        margin-top: 6px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        padding-left: 13px;
     }
 }
 

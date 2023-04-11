@@ -14,7 +14,7 @@
 
         <div class="book-content">
             <div class="title-button-flex">
-                <h2>Title</h2>
+                <h2></h2>
                 <div class="favourite-button-flex">
                     <div class="-favourite-icon-wrapper">
                         <img src="../assets/images/favourite-icon.svg" alt="">
@@ -26,17 +26,15 @@
 
             <div class="author-tags-price-wrapper">
                 <div class="left-wrapper">
-                    <h4>Author</h4>
-                    <h4>Post Tags</h4>
+                    <h4></h4>
+                    <h4></h4>
                 </div>
-                <h2>$25</h2>
+                <h2></h2>
             </div>
 
             <div class="book-description">
-                <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, eaque voluptatem accusamus, id rem placeat tempore autem temporibus voluptates accusantium a praesentium aperiam, quis necessitatibus veritatis laudantium error saepe provident commodi ea eius quas. Commodi corrupti distinctio enim eaque id. Voluptates rem eum voluptatibus iusto dicta natus, animi ipsum recusandae. Laborum dicta, neque cum maxime itaque omnis animi dolore consequatur fugiat, illo quibusdam recusandae unde voluptas odit quos, earum officiis quaerat molestias nulla sed. Exercitationem ipsam tempora totam nulla eius, porro, quam cum quas earum laudantium voluptas nostrum, consectetur dicta esse? Tempore fuga nisi quis sint repudiandae amet ipsum asperiores.</p>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eligendi harum expedita eius ullam rerum, aperiam sit! Deleniti totam unde rem error excepturi reiciendis officia eius recusandae similique aspernatur. Consectetur?</p>
+                <h2></h2>
+                <p></p>
             </div>
 
             <div class="product-details-wrapper">
@@ -45,48 +43,48 @@
                     <div class="box-1">
                         <div class="row-flex">
                             <h3>Condition:</h3>
-                            <p>Good</p>
+                            <p></p>
                         </div>
 
                         <div class="row-flex">
                             <h3>Language:</h3>
-                            <p>English</p>
+                            <p></p>
                         </div>
                     </div>
 
                     <div class="box-1">
                         <div class="row-flex">
                             <h3>Cover style:</h3>
-                            <p>Hard</p>
+                            <p></p>
                         </div>
 
                         <div class="row-flex">
                             <h3>Publish year:</h3>
-                            <p>2022</p>
+                            <p></p>
                         </div>
                     </div>
 
                     <div class="box-1">
                         <div class="row-flex">
                             <h3>First edition:</h3>
-                            <p>No</p>
+                            <p></p>
                         </div>
 
                         <div class="row-flex">
                             <h3>Limited edition:</h3>
-                            <p>No</p>
+                            <p></p>
                         </div>
                     </div>
 
                     <div class="box-1">
                         <div class="row-flex">
                             <h3>Signed by author:</h3>
-                            <p>No</p>
+                            <p></p>
                         </div>
 
                         <div class="row-flex">
                             <h3>Delivery method:</h3>
-                            <p>Pickup</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -96,6 +94,7 @@
             </div>
             
         </div>
+    {{ book_id_received }}
     </div>
 </template>
 
@@ -179,3 +178,16 @@
     }
 
 </style>
+
+<script>
+
+export default {
+
+    methods:{
+        receive_book_id(){
+            localStorage.getItem('book_id_received')
+        }
+    }
+}
+</script>
+

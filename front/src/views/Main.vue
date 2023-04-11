@@ -13,16 +13,16 @@ import WideImage from "../components/WideImage.vue";
   <h1 class="main-h1-title">Latest Listings</h1>
 
   <section class="cards-section">
-    <BookCard 
-    v-for="book of books_list"
-    :Book="book"
-    
-    />
-
-    
+    <router-link to="/bookdescription">
+      <BookCard 
+      v-for="book of books_list"
+      :Book="book"
+      @click="on_click_local_storage()"
+      />
+    </router-link>
   </section>
-
-  {{ single_book.postTitle }}
+  {{ book_id}}
+  
 
   <h1 class="main-h1-title">Popular Categories</h1>
   <section class="popular-categories-section">
@@ -72,6 +72,7 @@ export default{
       return{
         //Model creation code for main page starts
         books_list:[],
+        book_id:'',
         single_book:{
           postTitle: '',
           author: '',
@@ -88,19 +89,22 @@ export default{
         this.books_list = received_data;
       },
 
-      async fetch_single_book(){
-        let id = "6430a3f51b6d8652899e8a73";
-        const response = await fetch ('http://localhost:3000/getsinglebook/'+ id);
-        const mybook = await response.json();
-        console.log(mybook)
-        this.single_book = mybook;
+      on_click_local_storage(){
+        this.book_id = book._id
+        localStorage.setItem('book_id_received', 'book_id')
       }
+      // async fetch_single_book(){
+      //   const response = await fetch ('http://localhost:3000/getsinglebook/'+ this.book_id);
+      //   const mybook = await response.json();
+      //   console.log(mybook)
+      //   this.single_book = mybook;
+      // }
 
     },
 
     created(){
       this.fetch_all_books();
-      this.fetch_single_book();
+     
     }
   }
 

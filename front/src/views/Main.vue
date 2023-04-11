@@ -1,8 +1,8 @@
 <script setup>
-import BookCard from './components/BookCard.vue'
-import MainFeatures from './components/MainFeatures.vue'
-import PopularCategories from './components/PopularCategories.vue'
-import WideImage from './components/WideImage.vue'
+import BookCard from "../components/BookCard.vue";
+import MainFeatures from "../components/MainFeatures.vue";
+import PopularCategories from "../components/PopularCategories.vue";
+import WideImage from "../components/WideImage.vue";
 </script>
 
 <template>
@@ -13,7 +13,10 @@ import WideImage from './components/WideImage.vue'
   <h1 class="main-h1-title">Latest Listings</h1>
 
   <section class="cards-section">
-    <BookCard  v-for="book in 8"/>
+    <BookCard 
+    v-for="book of books_list"
+    :Book="book"
+    />
   </section>
 
   <h1 class="main-h1-title">Popular Categories</h1>
@@ -25,38 +28,68 @@ import WideImage from './components/WideImage.vue'
     <WideImage />
   </section>
 
-
 </template>
 
 <style scoped>
-  .cards-section{
-    background-color: var(--book_wheat);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
-    gap: 50px;
-    width: 100%;
-    padding: 60px 0;
-  }
+.cards-section {
+  background-color: var(--book_wheat);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  padding: 60px 0;
+}
 
-  .main-features-section{
-    display: flex;
-    justify-content: center;
-    padding: 30px 0 0 0;
-  }
+.main-features-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0 0;
+}
 
-  .main-h1-title{
-    padding: 50px 0;
-    width: 400px;
-    color: var(--book_brown);
-    margin: auto 6%;
-  }
+.main-h1-title {
+  padding: 50px 0;
+  width: 400px;
+  color: var(--book_brown);
+  margin: auto 6%;
+}
 
-  .popular-categories-section{
-    display: flex;
-    justify-content: center;
-    
-  }
-
+.popular-categories-section {
+  display: flex;
+  justify-content: center;
+}
 </style>
+
+<script>
+export default{
+    data(){
+      return{
+        //Model creation code for main page starts
+        books_list:[],
+      }
+    },
+
+    methods:{
+      async fetch_all_books(){
+        const response = await fetch ('http://localhost:3000/getbookdata/')
+        const received_data = await response.json();
+        this.books_list = received_data;
+      }
+
+    },
+
+    created(){
+      this.fetch_all_books();
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+

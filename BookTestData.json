@@ -1,0 +1,48 @@
+{
+  "postTitle": "Postman Test Title",
+  "author": "Bob Sanchez",
+  "price": 3.5,
+  "category": "100 - Science",
+  "yearPub": "1984",
+  "condition": "Used",
+  "searchTags": ["book", "cake", "Banana", "Cheese"],
+  "listedDate": 1680735145248,
+  "expiryDate": 1680735145268,
+  "ownerId": "",
+  "description": "This is a test book sent from postman",
+  "coverstyle": {
+    "soft": false
+  },
+  "notable": {
+    "firstEdition": false,
+    "limitedEdition": true,
+    "signedEdition": false
+  },
+  "language": "French",
+  "shipping": {
+    "payment": {
+      "cash": true,
+      "bank": false,
+      "credit": false
+    },
+    "delivery": {
+      "option1": {
+        "method": "Pickup",
+        "cost": 0.0
+      },
+      "option2": {
+        "method": "",
+        "cost": 2
+      },
+      "option3": {
+        "method": "",
+        "cost": 3.75
+      }
+    },
+    "contactMethod": {
+      "email": false,
+      "phone": false,
+      "message": false
+    }
+  }
+}

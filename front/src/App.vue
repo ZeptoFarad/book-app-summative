@@ -1,8 +1,3 @@
 <template>
-  <div>
-    <SignUp />
-  </div>
+  <div></div>
 </template>
-<script setup>
-import SignUp from "./views/SignUp.vue";
-</script>

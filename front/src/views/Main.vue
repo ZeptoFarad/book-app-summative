@@ -13,10 +13,8 @@ import WideImage from "../components/WideImage.vue";
   <h1 class="main-h1-title">Latest Listings</h1>
 
   <section class="cards-section">
-    <BookCard 
-    v-for="book of books_list"
-    :Book="book"
-    />
+    <BookCard v-for="book of books_list" :Book="book" />
+    <div>Delete Edit</div>
   </section>
 
   <h1 class="main-h1-title">Popular Categories</h1>
@@ -27,7 +25,6 @@ import WideImage from "../components/WideImage.vue";
   <section class="wide-image-section">
     <WideImage />
   </section>
-
 </template>
 
 <style scoped>
@@ -62,34 +59,24 @@ import WideImage from "../components/WideImage.vue";
 </style>
 
 <script>
-export default{
-    data(){
-      return{
-        //Model creation code for main page starts
-        books_list:[],
-      }
-    },
+export default {
+  data() {
+    return {
+      //Model creation code for main page starts
+      books_list: []
+    };
+  },
 
-    methods:{
-      async fetch_all_books(){
-        const response = await fetch ('http://localhost:3000/getbookdata/')
-        const received_data = await response.json();
-        this.books_list = received_data;
-      }
-
-    },
-
-    created(){
-      this.fetch_all_books();
+  methods: {
+    async fetch_all_books() {
+      const response = await fetch("http://localhost:3000/getbookdata/");
+      const received_data = await response.json();
+      this.books_list = received_data;
     }
+  },
+
+  created() {
+    this.fetch_all_books();
   }
-
+};
 </script>
-
-
-
-
-
-
-
-

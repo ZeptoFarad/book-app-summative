@@ -57,9 +57,7 @@
 </template>
 
 <style scoped>
-
-
-    .header-box2-catle{
+   .header-box2-catle{
         cursor: pointer;
     }
     .drop-box-skin{
@@ -184,10 +182,10 @@
     .search-box2{
     display: block;
         margin: 13px auto;
-        padding: 12px 40px ;
+        padding: 12px 20px ;
         width: 60vw;
         text-align: end;
-        border-radius: 5px;
+        border-radius: 6px;
         border: 1px solid whitesmoke;
     }
 }

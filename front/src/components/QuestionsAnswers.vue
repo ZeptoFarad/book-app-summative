@@ -5,11 +5,23 @@
             <button class="tertiary_button">Ask a Question</button>
         </div>
 
+        <div class="question-wrapper">
+            <div class="user-question">
+                <h3>username</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, vitae? <span>Reply</span></p>
+            </div>
+
+            <div class="buyer-answer">
+                <h3>User</h3>
+                <p></p>
+            </div>
+           
+        </div>
 
         <div class="question-input-wrapper">
             <div class="input_box">
             <label class="" for="question">Enter your question:</label>
-            <textarea class="question" id="question" type="text" placeholder="Please enter your question in a maximum of 100 characters" maxlength="100" />
+            <textarea class="question-box" id="question" type="text" placeholder="Please enter your question in a maximum of 100 characters" maxlength="100" />
             <div class="button-flex-end">
                 <button class="primary_button">Submit</button>
             </div>
@@ -42,7 +54,7 @@
     }
   
 
-    .question{
+    .question-box{
         max-width: 500px;
         height: 100px;
         font-family: 'Quicksand_Regular';

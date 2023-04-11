@@ -222,13 +222,13 @@
                         <div class="shipping_and_payment_wrapper">
                             <label for="delivery_cost">Delivery Cost:</label>
                             <div class="delivery_cost input_box">
-                                <div class="option_1">
+                                <div class="cost_1">
                                     <input type="text" id="price" name="price" value="$0.00">
                                 </div>
-                                <div class="option_2">
+                                <div class="cost_2">
                                     <input type="text" id="price" name="price" value="$0.00">
                                 </div>
-                                <div class="option_3">
+                                <div class="cost_3">
                                     <input type="text" id="price" name="price" value="$0.00">
                                 </div>
                             </div>
@@ -254,7 +254,7 @@
         flex-direction: column;
         align-items: center;
     }
-    /* .book_category_input select, .condition_input select, .cover_style_input select, .language_input select */
+
     select {
         font-family: 'Quicksand', sans-serif;
         font-weight: 500;
@@ -331,24 +331,39 @@
         display: flex; 
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-bottom: 10px;
     }
             
     
     
-    .shipping_and_payment_inputs {
+    /* .shipping_and_payment_inputs {
         width: 70vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    .delivery_options {display: flex; flex-direction: row; gap: 20px; width: 70vw;}
-    .checkbox {display: flex; flex-direction: row; gap: 20px; width: 70vw;}
-    /* .option_1, .option_2, .option_3 {width: 0vw;}  */
-    .delivery_cost {
+    } */
+    /* .delivery_options {
+        display: flex; 
+        flex-direction: row; 
+        gap: 20px; 
+        width: 70vw; 
+        justify-content: space-between;
+    } */
+    /* .checkbox {
+        display: flex; 
+        flex-direction: row; 
+        gap: 20px; 
+        width: 70vw; 
+        justify-content: space-between;
+    } */
+    /* .shipping_and_payment_wrapper {
+        width: 15vw;
+    } */
+    /* .delivery_cost {
         width: 70vw;
         display: flex;
-        /* justify-content: space-between; */
-    }
+    } */
+    /* .delivery_cost.input_box {width: 30vw;} */
 
     
     
@@ -388,25 +403,27 @@
             margin: 10px;
             }
             .list_a_book_title {display: flex; justify-content: center; }
+            .list_a_book_buttons {display: flex; justify-content: center;}
+
               
     }
     @media screen and (max-width: 1000px){
-        .shipping_and_payment_inputs {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
+        /* .shipping_and_payment_inputs {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
         
-    }
-        .delivery_options {
+        } */
+        /* .delivery_options {
             flex-direction: row;
              
-        }
-        .checkbox {
+        } */
+        /* .checkbox {
             flex-direction: row; 
-        }
-        .shipping_and_payment select{
+        } */
+        /* .shipping_and_payment select{
             width: 30vw;
-        }
+        } */
     }
     
 

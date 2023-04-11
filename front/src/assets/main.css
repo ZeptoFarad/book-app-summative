@@ -226,6 +226,7 @@ button.primary_button:hover {
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   align-items: center;
   justify-content: center;
+  height: 48px;
 }
 button.secondary_button:hover {
   background: var(--book_brown, darkbrown);

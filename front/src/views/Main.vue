@@ -16,8 +16,13 @@ import WideImage from "../components/WideImage.vue";
     <BookCard 
     v-for="book of books_list"
     :Book="book"
+    
     />
+
+    
   </section>
+
+  {{ single_book.postTitle }}
 
   <h1 class="main-h1-title">Popular Categories</h1>
   <section class="popular-categories-section">
@@ -67,6 +72,12 @@ export default{
       return{
         //Model creation code for main page starts
         books_list:[],
+        single_book:{
+          postTitle: '',
+          author: '',
+          price: '',
+          category: ''
+        }
       }
     },
 
@@ -75,12 +86,21 @@ export default{
         const response = await fetch ('http://localhost:3000/getbookdata/')
         const received_data = await response.json();
         this.books_list = received_data;
+      },
+
+      async fetch_single_book(){
+        let id = "6430a3f51b6d8652899e8a73";
+        const response = await fetch ('http://localhost:3000/getsinglebook/'+ id);
+        const mybook = await response.json();
+        console.log(mybook)
+        this.single_book = mybook;
       }
 
     },
 
     created(){
       this.fetch_all_books();
+      this.fetch_single_book();
     }
   }
 

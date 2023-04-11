@@ -1,4 +1,8 @@
 <template>
-  <div></div>
+  <div>
+    <Main />
+  </div>
 </template>
-<script setup></script>
+<script setup>
+  import Main from './views/Main.vue'
+</script>

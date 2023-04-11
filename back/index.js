@@ -46,6 +46,24 @@ app.get("/getbookdata", async (req, res) => {
   console.log("Request Received");
   await res.send(books);
 });
+
+// //GET single book using ID
+// app.get("/getbookdata/:id", async(req, res) => {
+//   const get_single_book = await BookPost.findById({ _id : req.params.id});
+//   res.json(get_single_book)
+// });
+
+app.get("/getsinglebook/:id", async(req,res)=>{
+  const {body} = req;
+  let book = req.params.id;
+console.log(book)
+  console.log("Book Received" 
+  + book)
+  let mybook = await BookPost.findOne({_id: book})
+  
+  res.json(mybook)
+})
+
 // Delete Book By Id
 app.post("/deletebook", async (req, res) => {
   const { body } = req;

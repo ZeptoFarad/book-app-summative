@@ -38,11 +38,12 @@
 <style scoped>
     .footer {
         background-color: var(--book_brown);
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 50px;
+        padding-top: 10px;
+        
     }
     .account, .about_us, .shopping_online, .contact_us {
         padding: 20px;
@@ -62,7 +63,7 @@
         padding: 20px;
     }
     .logo img {
-        max-width: 300px;
+        max-width: 25vw;
 
     }
     .logo::after {
@@ -93,7 +94,7 @@
             padding-top: 50px;
         }
         .logo img {
-            min-width: 380px;
+            min-width: 75vw;
         }
         .account-links, .about-links, .shopping-links {
             display: none;

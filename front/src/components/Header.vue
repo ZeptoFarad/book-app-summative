@@ -190,7 +190,7 @@
     }
     .book-logo{
         flex: 3.5;
-        margin-left: 2px;
+        margin-left: 0px;
         margin-top: 6px;
         margin-bottom: 5px;
         cursor: pointer;

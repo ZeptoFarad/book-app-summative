@@ -123,12 +123,12 @@
         display: none;
     }
     .primary_button{
-       padding: 13px 10px 0px 10px;
+        /* padding: 13px 10px 0px 10px;  */
        margin-right: 5px;
        margin-left: 20px;
     }
     .secondary_button{
-        padding: 0px 10px 0px 8px;
+         padding: 0px 15px 0px 15px; 
         margin-left: 10px;
         margin-right: 5px;
     }

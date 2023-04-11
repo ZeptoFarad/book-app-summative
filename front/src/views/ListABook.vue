@@ -128,7 +128,7 @@
                     <h2>Search Tags:</h2>
                 </div>
                 <div class="search_tags_inputs input_box">
-                    <label for="tags">Tags</label>
+                    <label for="tags">Tags:</label>
                     <input type="text" id="tags" name="tags" value="#book">
                 </div>
                 <label for="suggested_tags">Suggested:</label>
@@ -150,8 +150,8 @@
                     <h2>Shipping and Payment:</h2>
                 </div>
                 <div class="shipping_and_payment_inputs input_box">
-                <div class="checkbox">
-                    <div class="shipping_and_payment_wrapper">
+                    <div class="checkbox">
+                        <div class="shipping_and_payment_wrapper">
                             <label for="payment">Payment:</label>
                             <div class="payment">
                                 <div class="cash">
@@ -190,7 +190,7 @@
                         <div class="shipping_and_payment_wrapper">
                             <label for="delivery_method">Delivery Method:</label>
                             <div class="delivery_method">
-                                <div class="option_1">
+                                
                                     <select id="option_1" name="option_1">
                                         <option value="0">Pickup</option>
                                         <option value="1">North Island</option>
@@ -198,8 +198,6 @@
                                         <option value="3">North Island - Rural</option>
                                         <option value="4">South Island - Rural</option>
                                     </select>
-                                </div>
-                                <div class="option_2">
                                     <select id="option_2" name="option_2">
                                         <option value="0">Pickup</option>
                                         <option value="1">North Island</option>
@@ -207,8 +205,6 @@
                                         <option value="3">North Island - Rural</option>
                                         <option value="4">South Island - Rural</option>
                                     </select>
-                                </div>
-                                <div class="option_3">
                                     <select id="option_3" name="option_3">
                                         <option value="0">Pickup</option>
                                         <option value="1">North Island</option>
@@ -216,22 +212,16 @@
                                         <option value="3">North Island - Rural</option>
                                         <option value="4">South Island - Rural</option>
                                     </select>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="shipping_and_payment_wrapper">
                             <label for="delivery_cost">Delivery Cost:</label>
                             <div class="delivery_cost input_box">
-                                <div class="cost_1">
+                                    <input type="text" id="price" name="price" value="$0.00">
+                                    <input type="text" id="price" name="price" value="$0.00">
                                     <input type="text" id="price" name="price" value="$0.00">
                                 </div>
-                                <div class="cost_2">
-                                    <input type="text" id="price" name="price" value="$0.00">
-                                </div>
-                                <div class="cost_3">
-                                    <input type="text" id="price" name="price" value="$0.00">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,12 +269,10 @@
             
     }
             
-            /* .first_edition {padding-top: 10px;} */
             .book_details_inputs {
                 display: flex;
                 flex-direction: column;
                 width: 70vw;
-                /* padding: 30px; */
             }
             .author_input, .price_input, .book_category_input, .condition_input, .year_published_input, .cover_style_input, .language_input {
                 display: flex;
@@ -330,40 +318,37 @@
         width: 70vw; 
         display: flex; 
         justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
+    
             
     
-    
-    /* .shipping_and_payment_inputs {
-        width: 70vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } */
-    /* .delivery_options {
+    .delivery_method, .delivery_cost.input_box {
+        display: flex; 
+        flex-direction: column;
+        width: 20vw;
+    }
+    .checkbox {
         display: flex; 
         flex-direction: row; 
-        gap: 20px; 
-        width: 70vw; 
-        justify-content: space-between;
-    } */
-    /* .checkbox {
+        justify-content: space-between; 
+        gap: 2vw;
+    }
+    .shipping_and_payment_inputs {
         display: flex; 
         flex-direction: row; 
-        gap: 20px; 
-        width: 70vw; 
-        justify-content: space-between;
-    } */
-    /* .shipping_and_payment_wrapper {
-        width: 15vw;
-    } */
-    /* .delivery_cost {
         width: 70vw;
-        display: flex;
-    } */
-    /* .delivery_cost.input_box {width: 30vw;} */
+    }
+    .delivery_options {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 2vw;
+    }
+    .delivery_cost {width: 30vw;}
+    .shipping_and_payment_inputs.input_box {justify-content: space-between;}
 
     
     
@@ -408,22 +393,17 @@
               
     }
     @media screen and (max-width: 1000px){
-        /* .shipping_and_payment_inputs {
+        .shipping_and_payment_inputs {
             flex-direction: column;
             display: flex;
             align-items: center;
         
-        } */
-        /* .delivery_options {
-            flex-direction: row;
-             
-        } */
-        /* .checkbox {
-            flex-direction: row; 
-        } */
-        /* .shipping_and_payment select{
-            width: 30vw;
-        } */
+        }
+        .checkbox {width: 70vw; justify-content: space-around;}
+        .delivery_options {width: 70vw; justify-content: space-between;}
+        .delivery_method, .delivery_cost.input_box {width: 30vw;}
+
+        
     }
     
 

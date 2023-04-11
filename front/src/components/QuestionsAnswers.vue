@@ -5,7 +5,7 @@
             <button class="tertiary_button" @click="isHidden = !isHidden">Ask a Question</button>
         </div>
 
-        <div class="buyer-question-wrapper">
+        <div class="question-wrapper">
             <div class="user-question">
                 <h3>username</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, vitae? <span>Reply</span></p>
@@ -15,7 +15,6 @@
                 <h3>User</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eius?</p>
             </div>
-           
         </div>
 
         <div class="question-input-wrapper" v-if="isHidden">
@@ -42,14 +41,16 @@
         margin: auto;
         padding: 20px;
     }
+
     .title-flex{
         display: flex;
         justify-content: space-between;
     }
 
     .question-wrapper{
+        display: flex;
+        flex-direction: column;
         border-bottom: 2px solid var(--book_wheat);
-        
     }
 
     .question-input-wrapper{
@@ -57,6 +58,7 @@
         width: clamp(250px, 40vw, 800px);
         background-color: var(--book_wheat);
         border-radius: 10px;
+        margin: 10px;
     }
   
 
@@ -85,6 +87,7 @@
         width: clamp(300px, 50vw, 600px);
         border-radius: 10px;
         margin-bottom: 10px;
+        align-self: flex-end;
     }
 
     span{

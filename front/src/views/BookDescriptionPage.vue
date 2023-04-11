@@ -11,7 +11,6 @@
             <SliderVue />
         </div>
         
-
         <div class="book-content">
             <div class="title-button-flex">
                 <h2></h2>
@@ -109,16 +108,6 @@
         padding: 20px 0;
         color: var(--book_brown);
         /* background-color: aquamarine; */
-    }
-    .carousel{
-        max-width: 1400px;
-        height: 400px;
-    }
-
-    .carousel-slide{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .title-button-flex, .author-tags-price-wrapper{

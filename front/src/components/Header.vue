@@ -106,9 +106,9 @@
     }
     .book-logo{
         flex: 3.5;
-        margin-left: 10px;
+        margin-left: 12px;
+        margin-top: 6px;
         margin-bottom: 5px;
-        margin:5px ;
         cursor: pointer;
         padding-left: 13px;
     }
@@ -126,9 +126,13 @@
     }
     .primary_button{
        padding: 13px 10px 0px 10px;
+       margin-right: 5px;
+       margin-left: 20px;
     }
     .secondary_button{
-      
+        padding: 0px 10px 0px 8px;
+        margin-left: 10px;
+        margin-right: 5px;
     }
     
     .shopping-car{

@@ -5,8 +5,8 @@
             
         </div>
         <input type="text" placeholder="please enter your search book name or author name" class="search-box1">
-        <h5 class="primary_button">My Account</h5>
-        <h5 class="secondary_button">Sign Up</h5>
+        <div class="primary_button">My Account</div>
+        <div class="secondary_button">Sign Up</div>
         <div class="header-manu-logo">
             <img src="../assets/images/manu.svg" alt="" srcset="">
         </div>
@@ -58,7 +58,7 @@
 
 <style scoped>
 
-@media screen and (max-width:1440px){
+
     .header-box2-catle{
         cursor: pointer;
     }
@@ -119,29 +119,16 @@
         justify-content: space-between;
         padding:6px 10px 0px 2px;
         margin: 0px;
-        max-width: 1440px;
-        /* min-width: 320px; */
+       
     }
     .header-manu-logo{
         display: none;
     }
     .primary_button{
-        padding: 5px;
-        margin:4px;
-        min-width: 85px;
-        flex: 1.3;
-        font-size: 12px;
-        border-radius: 5px;
-        cursor: pointer;
+       padding: 13px 10px 0px 10px;
     }
     .secondary_button{
-        padding: 5px;
-        margin:5px;
-        min-width: 50px;
-        flex: 0.8;
-        font-size: 12px;
-        border-radius: 5px;
-        cursor: pointer;
+      
     }
     
     .shopping-car{
@@ -168,12 +155,11 @@
         margin: 0px;
         padding: 6px 6px 10px 17px;
         color:rgba(62, 26, 9, 1) ;
-        max-width: 1440px;
-        /* min-width: 320px; */
+     
     
     }
     .search-box2{display: none;}
-}
+
 
 @media screen and (max-width:661px){
 

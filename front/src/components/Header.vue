@@ -5,8 +5,8 @@
             
         </div>
         <input type="text" placeholder="please enter your search book name or author name" class="search-box1">
-        <div class="primary_button">My Account</div>
-        <div class="secondary_button">Sign Up</div>
+        <button class="primary_button">My Account</button>
+        <button class="secondary_button">Sign Up</button>
         <div class="header-manu-logo">
             <img src="../assets/images/manu.svg" alt="" srcset="">
         </div>
@@ -57,6 +57,7 @@
 </template>
 
 <style scoped>
+  
    .header-box2-catle{
         cursor: pointer;
     }
@@ -122,16 +123,7 @@
     .header-manu-logo{
         display: none;
     }
-    .primary_button{
-        /* padding: 13px 10px 0px 10px;  */
-       margin-right: 5px;
-       margin-left: 20px;
-    }
-    .secondary_button{
-         padding: 0px 15px 0px 15px; 
-        margin-left: 10px;
-        margin-right: 5px;
-    }
+   
     
     .shopping-car{
         display: flex;

@@ -196,7 +196,7 @@ p {
   background: var(--book_orange, darkorange);
   border: solid 2px var(--book_orange);
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 6px 15px 6px 15px;
   /* display: flex; */
   color: var(--book_brown, saddlebrown);
   /* text-align: left; */
@@ -205,7 +205,7 @@ p {
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   align-items: center;
   justify-content: center;
-  height: 48px;
+  height: 33px;
   box-sizing: border-box;
 }
 button.primary_button:hover {
@@ -218,7 +218,7 @@ button.primary_button:hover {
   background: var(--book_cream, seashell);
   border: solid 2px var(--book_brown, darkbrown);
   border-radius: 8px;
-  padding: 12px 20px;
+  padding: 6px 15px;
   display: flex;
   color: var(--book_brown, darkbrown);
   text-align: left;
@@ -227,7 +227,7 @@ button.primary_button:hover {
   font-size: clamp(0.875rem, 2.5vw, 1rem);
   align-items: center;
   justify-content: center;
-  height: 48px;
+  height: 33px;
 }
 button.secondary_button:hover {
   background: var(--book_brown, darkbrown);

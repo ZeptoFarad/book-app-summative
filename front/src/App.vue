@@ -1,14 +1,16 @@
 <script setup>
-  import HeaderVue from './components/newHeader.vue';
+  import checkoutVue from './components/checkOut.vue' 
+
 </script>
 
-
 <template>
-  <HeaderVue />
-  <div>
-    <router-view></router-view>   
+ 
+  
+  <div class="checkout-page">
+         <checkoutVue />
   </div>
 </template>
+
 
 
 

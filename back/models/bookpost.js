@@ -10,6 +10,8 @@ const bookpost = new mongoose.Schema({
   searchTags: Array,
   listedDate: { type: Date, default: Date.now },
   expiryDate: Date,
+  bookSold: Boolean,
+  soldTo: String,
   ownerId: String,
   description: String,
   coverstyle: { soft: { type: Boolean } },

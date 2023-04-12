@@ -53,16 +53,24 @@ app.get("/getbookdata", async (req, res) => {
 //   res.json(get_single_book)
 // });
 
-app.get("/getsinglebook/:id", async(req,res)=>{
-  const {body} = req;
+app.get("/getsinglebook/:id", async (req, res) => {
+  const { body } = req;
   let book = req.params.id;
-console.log(book)
-  console.log("Book Received" 
-  + book)
-  let mybook = await BookPost.findOne({_id: book})
-  
-  res.json(mybook)
-})
+  console.log(book);
+  console.log("Book Received" + book);
+  let mybook = await BookPost.findOne({ _id: book });
+
+  res.json(mybook);
+});
+
+app.get("/myListings/:userid", async (req, res) => {
+  const userId = req.params.userid;
+
+  let mylistings = await BookPost.find({ ownerId: userId });
+  res.json(mylistings);
+});
+
+// test IDs: 6435e1d7944caceac918b2c1   ,    64360f1a00033def9b57b59e
 
 // Delete Book By Id
 app.post("/deletebook", async (req, res) => {

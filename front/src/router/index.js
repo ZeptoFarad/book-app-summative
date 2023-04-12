@@ -7,6 +7,8 @@ import Home from '../views/Main.vue'
 import BookDescription from '../views/BookDescriptionPage.vue'
 import SignUp from '../views/SignUp.vue'
 import MyBookshop from '../components/test.vue'
+import Test from '../components/test.vue'
+
 const routes = [
     {
       path: '/',
@@ -30,6 +32,12 @@ const routes = [
       path: '/mybookshop',
       name: 'MyBookshop',
       component: MyBookshop
+    },
+
+    {
+      path: '/test',
+      name: 'Test',
+      component: Test
     }
 ]
 // code below is NOT to be edited

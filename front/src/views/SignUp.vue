@@ -309,7 +309,7 @@ export default {
               console.log("User Created Successfully");
               // Belen add router here //
               localStorage.setItem('userID', data.id)
-              this.$router.push()
+              this.$router.push('/test')
             }
             if (data.Reply == "Failed") {
               console.log("Adding User Failed");

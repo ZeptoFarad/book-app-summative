@@ -5,7 +5,7 @@
             
         </div>
         <input type="text" placeholder="please enter your search book name or author name" class="search-box1">
-        <div class="primary_button">My Account</div>
+        <div class="primary_button">Login</div>
         <div class="secondary_button" @click="router_to_sign_up()">Sign Up</div>
         <div class="header-manu-logo">
             <img src="../assets/images/manu.svg" alt="" srcset="">

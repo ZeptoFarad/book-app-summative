@@ -1,9 +1,3 @@
-<template>
-    <div>
-        {{ received_userID }}
-    </div>
-</template>
-
 <script>
     export default {
         data(){
@@ -18,7 +12,8 @@
         methods:{
             receive_user_id(){
                 this.received_userID = localStorage.getItem('userID')
-            }
+            },
+
         },
 
         created(){

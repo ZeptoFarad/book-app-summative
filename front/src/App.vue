@@ -1,11 +1,12 @@
 <script setup>
-  import yourCards from './components/yourCards.vue';
+  import HeaderVue from './components/newHeader.vue';
 </script>
 
-<template>
 
-  <div class="your-card-area" >
-    <yourCards />
+<template>
+  <HeaderVue />
+  <div>
+    <router-view></router-view>   
   </div>
 </template>
 

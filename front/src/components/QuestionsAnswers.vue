@@ -11,9 +11,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat, suscipit autem inventore laudantium dolores officiis asperiores libero, quas voluptas a ullam. Dicta doloremque, magnam dolores quis maxime enim obcaecati ad eligendi, aliquid nemo, commodi inventore asperiores assumenda consectetur eveniet! <span class="reply-button" @click="isHidden = !isHidden">Reply</span></p>
             </div>
 
-            <div class="buyer-answer-wrapper">
+            <div class="seller-answer-wrapper">
                 <h3>User</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, quaerat?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eius?</p>
+
             </div>
         </div>
 
@@ -32,28 +33,39 @@
 </template>
 
 <style scoped>
-    /* component wrapper */
+
+    /* Question component main wrapper style */
     .questions-answers-wrapper{
         background-color: white;
         border: 1px solid var(--book_brown);
         max-width: 1400px;
         border-radius: 10px;
-        margin: auto;
         padding: 20px;
     }
 
+
     /* Flexing of the title and button */
+
     .title-flex{
         display: flex;
         justify-content: space-between;
     }
 
-    /* User and seller questions/answer styling */
 
+    /* Buyer - Seller question wrapper style */
     .question-wrapper{
         display: flex;
         flex-direction: column;
         border-bottom: 2px solid var(--book_wheat);
+
+    }
+
+    .seller-answer-wrapper{
+        background-color: var(--book_wheat);
+        padding: 10px;
+        width: clamp(300px, 50vw, 600px);
+        border-radius: 10px;
+
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
@@ -97,18 +109,50 @@
         width: clamp(240px, 40vw, 800px);
         height: 100px;
         font-family: 'Quicksand_Regular';
-        margin-bottom: 10px;
-    }
 
+        margin-bottom: 10px;
+        align-self: flex-end;
+    }
+  
     .button-flex-end{
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
+
+    span{
+        padding-left: 10px;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    /* Display question input style */
+    .question-input-wrapper{
+        padding: 10px;
+        width: clamp(250px, 40vw, 800px);
+        background-color: var(--book_wheat);
+        border-radius: 10px;
+        margin: auto;
+    }
+
     .primary_button{
         width: fit-content;
         margin: 0;
     }
+
+
+    .question-box{
+        width: clamp(240px, 40vw, 800px);
+        height: 100px;
+        font-family: 'Quicksand_Regular';
+        margin-bottom: 10px;
+        margin: 0;
+    }
+
 
 </style>
 

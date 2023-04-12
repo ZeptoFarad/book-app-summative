@@ -46,6 +46,24 @@ app.get("/getbookdata", async (req, res) => {
   console.log("Request Received");
   await res.send(books);
 });
+
+// //GET single book using ID
+// app.get("/getbookdata/:id", async(req, res) => {
+//   const get_single_book = await BookPost.findById({ _id : req.params.id});
+//   res.json(get_single_book)
+// });
+
+app.get("/getsinglebook/:id", async(req,res)=>{
+  const {body} = req;
+  let book = req.params.id;
+console.log(book)
+  console.log("Book Received" 
+  + book)
+  let mybook = await BookPost.findOne({_id: book})
+  
+  res.json(mybook)
+})
+
 // Delete Book By Id
 app.post("/deletebook", async (req, res) => {
   const { body } = req;
@@ -69,11 +87,12 @@ app.post("/addcomment", async (req, res) => {
 app.post("/signup", async (req, res) => {
   //Check if user email exists
   const { body } = await req;
+  console.log(body);
 
   let useremail = toString(body.user.email);
   const checker = await CreateUser.find({ email: "bobbob@gmail.com" }); // When adding email create code to make it toLowercase()
-
-  if (checker.length > 0) res.send({ Error: "User Already Exists" });
+  console.log(checker);
+  if (checker.length > 0) res.send(JSON.stringify({ Reply: "Failed" }));
   else {
     const { body } = await req;
     const newUser = await CreateUser.create(body.user);
@@ -84,7 +103,7 @@ app.post("/signup", async (req, res) => {
       userid: newUser._id,
       islogged: true
     });
-    await res.send({ ok: "1" });
+    await res.send({ Reply: "Success" });
   }
 });
 

@@ -90,7 +90,7 @@ app.post("/signup", async (req, res) => {
   console.log(body);
 
   let useremail = toString(body.user.email);
-  const checker = await CreateUser.find({ email: "bobbob@gmail.com" }); // When adding email create code to make it toLowercase()
+  const checker = await CreateUser.find({ email: useremail }); // When adding email create code to make it toLowercase()
   console.log(checker);
   if (checker.length > 0) res.send(JSON.stringify({ Reply: "Failed" }));
   else {

@@ -1,9 +1,10 @@
 <script setup>
-import headerVue from './components/newHeader.vue';
+
+import itemAddedToCardVue from './components/itemAddedToCar.vue'
 </script>
 
 <template>
-  <header>
-    <headerVue />
-  </header>
+  <div class="model-body">
+    <itemAddedToCardVue />
+  </div>
 </template>

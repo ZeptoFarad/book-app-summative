@@ -19,6 +19,7 @@ const bookpost = new mongoose.Schema({
     signedEdition: { type: Boolean }
   },
   language: String,
+  images: Array,
   shipping: {
     payment: {
       cash: { type: Boolean },

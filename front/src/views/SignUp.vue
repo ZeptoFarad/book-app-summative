@@ -307,6 +307,7 @@ export default {
             console.log(data.Reply);
             if (data.Reply == "Success") {
               console.log("User Created Successfully");
+
               // Belen add router here //
             }
             if (data.Reply == "Failed") {

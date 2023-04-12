@@ -53,16 +53,15 @@ app.get("/getbookdata", async (req, res) => {
 //   res.json(get_single_book)
 // });
 
-app.get("/getsinglebook/:id", async(req,res)=>{
-  const {body} = req;
+app.get("/getsinglebook/:id", async (req, res) => {
+  const { body } = req;
   let book = req.params.id;
-console.log(book)
-  console.log("Book Received" 
-  + book)
-  let mybook = await BookPost.findOne({_id: book})
-  
-  res.json(mybook)
-})
+  console.log(book);
+  console.log("Book Received" + book);
+  let mybook = await BookPost.findOne({ _id: book });
+
+  res.json(mybook);
+});
 
 // Delete Book By Id
 app.post("/deletebook", async (req, res) => {
@@ -103,7 +102,8 @@ app.post("/signup", async (req, res) => {
       userid: newUser._id,
       islogged: true
     });
-    await res.send({ Reply: "Success" });
+    console.log(newUser._id);
+    await res.send({ Reply: "Success", id: newUser._id });
   }
 });
 

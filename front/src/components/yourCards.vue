@@ -39,8 +39,13 @@
                   <h4 class="price1">$25</h4>
                </div>
                <div class="item-price-box">
+<<<<<<< Updated upstream
                   <h4 class="item-name">Delevery</h4>
                   <h4 class="price1">$5</h4>
+=======
+                  <div class="item-name">Delivery</div>
+                  <div class="price1">$5</div>
+>>>>>>> Stashed changes
                </div>
                <div class="item-price-box">
                   <h4 class="item-name1">Total</h4>
@@ -56,8 +61,13 @@
                   <h4 class="price1">$25</h4>
                </div>
                <div class="item-price-box">
+<<<<<<< Updated upstream
                   <h4 class="item-name">Delevery</h4>
                   <h4 class="price1">$5</h4>
+=======
+                  <div class="item-name">Delivery</div>
+                  <div class="price1">$5</div>
+>>>>>>> Stashed changes
                </div>
                <div class="item-price-box">
                   <h4 class="item-name1">Total</h4>

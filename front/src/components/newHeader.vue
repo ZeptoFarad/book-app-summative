@@ -6,15 +6,13 @@
         </div>
         <input type="text" placeholder="please enter your search book name or author name" class="search-box1">
         <div class="primary_button">My Account</div>
-        <div class="secondary_button">Sign Up</div>
+        <div class="secondary_button" @click="router_to_sign_up()">Sign Up</div>
         <div class="header-manu-logo">
             <img src="../assets/images/manu.svg" alt="" srcset="">
         </div>
         <div class="shopping-car">
            <div class="basket">
              <img src="../assets/images/basket.svg" alt="" srcset="">
-             
-            <!-- <img src="../assets/images/basket.svg" alt="" srcset=""> -->
            </div>
            <p class="increat-item">{{ amount }}</p>
         </div>
@@ -202,17 +200,21 @@
 
 <script>
    export default {
-     data(){
-        return{
-            amount:0,
-            top_cate:['Top categorie 1', 'Top categorie 2','Top categorie 3','Top categorie 4','Top categorie 5'],
-            more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
-            top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
-            top_sellers:['Top seller book 1','Top seller book 2', 'Top seller book 3','Top seller book 4','Top seller book 5',],
-            show_on:false
+        data(){
+            return{
+                    amount:0,
+                    top_cate:['Top categorie 1', 'Top categorie 2','Top categorie 3','Top categorie 4','Top categorie 5'],
+                    more_cates:['More categorie 1', 'More categorie 2','More categorie 3','More categorie 4','More categorie 5','More categorie 6', 'More categorie 7','More categorie 8','More categorie 9','More categorie 10'],
+                    top_authors:['Top_authors 1','Top_authors 2', 'Top_authors 3','Top_authors 4','Top_authors 5','Top_authors 6','Top_authors 7', 'Top_authors 8','Top_authors 9','Top_authors 10'],
+                    top_sellers:['Top seller book 1','Top seller book 2', 'Top seller book 3','Top seller book 4','Top seller book 5',],
+                    show_on:false
+            }
+        },
+        
+        methods:{
+            router_to_sign_up(){
+                this.$router.push('/signup')
+            }
         }
-
-     }
-     
-   }
+    }
 </script>

@@ -5,17 +5,24 @@ import { createRouter, createWebHistory } from 'vue-router'
 // components related to those links needs to be defined below both for import and routes[] array
 import Home from '../views/Main.vue'
 import BookDescription from '../views/BookDescriptionPage.vue'
+import SignUp from '../views/SignUp.vue'
 const routes = [
     {
       path: '/',
       name: 'Home',
       component: Home
     },
+
     {
       path: '/bookdescription',
       name: 'BookDescription',
       component: BookDescription
+    },
 
+    {
+      path: '/signup',
+      name: 'SignUp',
+      component: SignUp
     }
 ]
 // code below is NOT to be edited

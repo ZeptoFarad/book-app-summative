@@ -27,37 +27,34 @@
                             <div class="input_box book_category_input">
                                 <!-- Requires drop down -->
                                 <label for="bookCategory">Book Category</label>
-                                <select id="bookCategory" name="bookCategory" value="Select category">
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
+                                <select id="bookCategory" name="bookCategory">
+                                    <option value="0">Option 1</option>
+                                    <option value="1">Option 2</option>
+                                    <option value="2">Option 3</option>
                                 </select>
                             </div>
                             <div class="input_box condition_input">
                                 <!-- Requires drop down -->
                                 <label for="condition">Condition</label>
-                                <input type="text" id="condition" name="condition" value="Select condition">
-                                <ul class="condition_links">
-                                    <li><h4>Option 1</h4></li>
-                                    <li><h4>Option 2</h4></li>
-                                    <li><h4>Option 3</h4></li>
-                                </ul>
+                                <select id="condition" name="condition" value="Select condition">
+                                    <option value="0">New</option>
+                                    <option value="1">Good</option>
+                                    <option value="2">Poor</option>
+                                </select>
                             </div>
                         </div>
                         <div class="dual_input">
-                            <!-- Number input? -->
                             <div class="input_box year_published_input">
                                 <label for="yearPublished">Year Published</label>
-                                <input type="text" id="yearPublished" name="yearPublished" value="YYYY">
+                                <input type="date" id="yearPublished" name="yearPublished" value="2023-04-11"
+                                min="1500-01-01" max="2023-04-11">
                             </div>
                             <div class="input_box cover_style_input">
-                                <!-- Requires drop down -->
                                 <label for="coverStyle">Cover Style</label>
-                                <input type="text" id="coverStyle" name="coverStyle" value="Select cover style">
-                                <ul class="cover_style_links">
-                                    <li><h4>Soft Cover</h4></li>
-                                    <li><h4>Hard Cover</h4></li>
-                                </ul>
+                                <select id="coverStyle" name="coverStyle">
+                                    <option value="0">Soft Cover</option>
+                                    <option value="1">Hard Cover</option>
+                                </select>
                             </div>
                         </div>
                         <div class="dual_input">
@@ -81,12 +78,14 @@
                             <!-- Requires drop down -->
                             <div class="input_box language_input">
                                 <label for="language">Language</label>
-                                <input type="text" id="language" name="language" value="Select Language">
-                                <ul class="language_links">
-                                    <li><h4>Option 1</h4></li>
-                                    <li><h4>Option 2</h4></li>
-                                    <li><h4>Option 3</h4></li>
-                                </ul>
+                                <select id="language" name="language">
+                                    <option value="0">English</option>
+                                    <option value="1">Spanish</option>
+                                    <option value="2">French</option>
+                                    <option value="3">Chinese</option>
+                                    <option value="4">Japanese</option>
+                                    <option value="5">Turkish</option>
+                                </select>
                             </div>
                         </div>
                         <div class="input_box description_input">
@@ -129,7 +128,7 @@
                     <h2>Search Tags:</h2>
                 </div>
                 <div class="search_tags_inputs input_box">
-                    <label for="tags">Tags</label>
+                    <label for="tags">Tags:</label>
                     <input type="text" id="tags" name="tags" value="#book">
                 </div>
                 <label for="suggested_tags">Suggested:</label>
@@ -151,6 +150,8 @@
                     <h2>Shipping and Payment:</h2>
                 </div>
                 <div class="shipping_and_payment_inputs input_box">
+                    <div class="checkbox">
+                        <div class="shipping_and_payment_wrapper">
                             <label for="payment">Payment:</label>
                             <div class="payment">
                                 <div class="cash">
@@ -166,6 +167,8 @@
                                     <label for="creditCard">Credit Card</label>
                                 </div>
                             </div>
+                        </div>                            
+                        <div class="shipping_and_payment_wrapper">
                             <label for="contact_methods">Contact Methods:</label>
                             <div class="contact_methods">
                                 <div class="phone">
@@ -181,6 +184,46 @@
                                     <label for="message">Message</label>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="delivery_options">
+                        <div class="shipping_and_payment_wrapper">
+                            <label for="delivery_method">Delivery Method:</label>
+                            <div class="delivery_method">
+                                
+                                    <select id="option_1" name="option_1">
+                                        <option value="0">Pickup</option>
+                                        <option value="1">North Island</option>
+                                        <option value="2">South Island</option>
+                                        <option value="3">North Island - Rural</option>
+                                        <option value="4">South Island - Rural</option>
+                                    </select>
+                                    <select id="option_2" name="option_2">
+                                        <option value="0">Pickup</option>
+                                        <option value="1">North Island</option>
+                                        <option value="2">South Island</option>
+                                        <option value="3">North Island - Rural</option>
+                                        <option value="4">South Island - Rural</option>
+                                    </select>
+                                    <select id="option_3" name="option_3">
+                                        <option value="0">Pickup</option>
+                                        <option value="1">North Island</option>
+                                        <option value="2">South Island</option>
+                                        <option value="3">North Island - Rural</option>
+                                        <option value="4">South Island - Rural</option>
+                                    </select>
+                                
+                            </div>
+                        </div>
+                        <div class="shipping_and_payment_wrapper">
+                            <label for="delivery_cost">Delivery Cost:</label>
+                            <div class="delivery_cost input_box">
+                                    <input type="text" id="price" name="price" value="$0.00">
+                                    <input type="text" id="price" name="price" value="$0.00">
+                                    <input type="text" id="price" name="price" value="$0.00">
+                                </div>
+                        </div>
+                    </div>
                 </div>
         </div>
 
@@ -193,13 +236,16 @@
 
 
 <style scoped>
+    
+    
     .list_a_book {
         padding: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .book_category_input select {
+
+    select {
         font-family: 'Quicksand', sans-serif;
         font-weight: 500;
         font-size: 1rem;
@@ -209,6 +255,7 @@
         border-radius: 10px;
         padding: 0.5rem;
         }
+    
     .list_a_book_title {width: 80vw; margin-bottom: 2vw;}
     .book_details_header, .add_images_header, .search_tags_header, .shipping_and_payment_header {width: 80vw; margin-left: 10vw; margin-top: 4vw; margin-bottom: 2vw;}
     .book_details, .add_images, .search_tags, .shipping_and_payment {
@@ -222,12 +269,10 @@
             
     }
             
-            /* .first_edition {padding-top: 10px;} */
             .book_details_inputs {
                 display: flex;
                 flex-direction: column;
                 width: 70vw;
-                /* padding: 30px; */
             }
             .author_input, .price_input, .book_category_input, .condition_input, .year_published_input, .cover_style_input, .language_input {
                 display: flex;
@@ -239,23 +284,9 @@
                 justify-content: space-between;
                 gap: 10px;
             }
-            /* .arrow {
-                border: solid var(--book_brown);
-                border-width: 0 3px 3px 0;
-                display: inline-block;
-                padding: 3px;
-                transform: rotate(45deg);
-            } */
-            /* .condition_links, .book_category_links, .cover_style_links, .language_links {display: none;}
-            .condition:hover > .condition_links{display: block;}
-            .book_category:hover > .book_category_links{display: block;}
-            .cover_style:hover > .cover_style_links{display: block;}
-            .language:hover > .language_links{display: block;} */
+            
         
         
-        
-    
-    
     .add_images_wrapper {
         display: flex;
         flex-direction: row;
@@ -287,15 +318,38 @@
         width: 70vw; 
         display: flex; 
         justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        padding-bottom: 20px;
     }
+    
             
     
-    
-    .shipping_and_payment_inputs {
-        width: 70vw;
-        display: flex;
+    .delivery_method, .delivery_cost.input_box {
+        display: flex; 
+        flex-direction: column;
+        width: 20vw;
     }
+    .checkbox {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 2vw;
+    }
+    .shipping_and_payment_inputs {
+        display: flex; 
+        flex-direction: row; 
+        width: 70vw;
+    }
+    .delivery_options {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 2vw;
+    }
+    .delivery_cost {width: 30vw;}
+    .shipping_and_payment_inputs.input_box {justify-content: space-between;}
+
     
     
     .list_a_book_buttons {width: 80vw; display: flex; justify-content: flex-end;}
@@ -334,9 +388,24 @@
             margin: 10px;
             }
             .list_a_book_title {display: flex; justify-content: center; }
+            .list_a_book_buttons {display: flex; justify-content: center;}
+
               
     }
+    @media screen and (max-width: 1000px){
+        .shipping_and_payment_inputs {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        
+        }
+        .checkbox {width: 70vw; justify-content: space-around;}
+        .delivery_options {width: 70vw; justify-content: space-between;}
+        .delivery_method, .delivery_cost.input_box {width: 30vw;}
 
+        
+    }
+    
 
     
 </style>

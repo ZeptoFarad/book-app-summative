@@ -12,16 +12,16 @@ import WideImage from "../components/WideImage.vue";
 
   <h1 class="main-h1-title">Latest Listings</h1>
 
+
   <section>
-    <!-- <router-link to="/bookdescription" class="cards-section"> -->
+ 
       <BookCard 
       v-for="book of books_list"
       :Book="book"
       @click="on_click_local_storage(book._id)"
       />
-    <!-- </router-link> -->
-  </section>
-  {{ book_id}}
+  
+
   
 
   <h1 class="main-h1-title">Popular Categories</h1>
@@ -32,7 +32,6 @@ import WideImage from "../components/WideImage.vue";
   <section class="wide-image-section">
     <WideImage />
   </section>
-
 </template>
 
 <style scoped>
@@ -67,6 +66,7 @@ import WideImage from "../components/WideImage.vue";
 </style>
 
 <script>
+
 export default{
     data(){
       return{
@@ -102,16 +102,7 @@ export default{
 
     created(){
       this.fetch_all_books();
-     
     }
   }
 
 </script>
-
-
-
-
-
-
-
-

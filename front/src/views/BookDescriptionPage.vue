@@ -10,10 +10,12 @@
         <div class="slider">
             <SliderVue />
         </div>
+
         
         <div class="book-content">
             <div class="title-button-flex">
                 <h2>{{ single_book.postTitle }}</h2>
+
                 <div class="favourite-button-flex">
                     <div class="-favourite-icon-wrapper">
                         <img src="../assets/images/favourite-icon.svg" alt="">
@@ -96,12 +98,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="questions-answers-section">
-                    <QuestionsAnswersVue />
-                </div>
             </div>
-            
+
+            <div class="questions-answers-section">
+                    <QuestionsAnswersVue />
+            </div>
         </div>
+            
+        
     </div>
 </template>
 
@@ -147,6 +151,7 @@
         margin: 0;
     }
 
+
     .tags{
         display: flex;
         width: 300px;
@@ -155,9 +160,14 @@
 
     span{
         font-family: 'Quicksand_Regular';
+
     }
 
     /* PRODUCT DETAILS CSS */
+
+    .product-details-wrapper{
+        padding: 20px 0;
+    }
     .product-details{
         display: flex;
         justify-content: space-between;
@@ -217,4 +227,15 @@ export default {
     }
 }
 </script>
+
+
+    /* MEDIA QUERY */
+
+    @media (max-width: 500px){
+        .product-details{
+            flex-direction: column;
+        }
+    }
+
+</style>
 

@@ -101,9 +101,11 @@ app.post("/signup", async (req, res) => {
       password: body.security.password,
       username: body.security.username,
       userid: newUser._id,
-      islogged: true
+      islogged: true,
     });
-    await res.send({ Reply: "Success" });
+    console.log(newUser._id);
+    await res.send({ Reply: "Success",id: newUser._id });
+    // await res.send({ Reply: "Success" });
   }
 });
 

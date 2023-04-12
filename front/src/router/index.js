@@ -6,6 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Main.vue'
 import BookDescription from '../views/BookDescriptionPage.vue'
 import SignUp from '../views/SignUp.vue'
+import MyBookshop from '../components/test.vue'
 const routes = [
     {
       path: '/',
@@ -23,6 +24,12 @@ const routes = [
       path: '/signup',
       name: 'SignUp',
       component: SignUp
+    }
+
+    {
+      path: '/mybookshop',
+      name: 'MyBookshop',
+      component: MyBookshop
     }
 ]
 // code below is NOT to be edited

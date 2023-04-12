@@ -12,10 +12,17 @@ import WideImage from "../components/WideImage.vue";
 
   <h1 class="main-h1-title">Latest Listings</h1>
 
-  <section class="cards-section">
-    <BookCard v-for="book of books_list" :Book="book" />
-    <div>Delete Edit</div>
-  </section>
+
+  <section>
+ 
+      <BookCard 
+      v-for="book of books_list"
+      :Book="book"
+      @click="on_click_local_storage(book._id)"
+      />
+  
+
+  
 
   <h1 class="main-h1-title">Popular Categories</h1>
   <section class="popular-categories-section">
@@ -59,24 +66,43 @@ import WideImage from "../components/WideImage.vue";
 </style>
 
 <script>
-export default {
-  data() {
-    return {
-      //Model creation code for main page starts
-      books_list: []
-    };
-  },
 
-  methods: {
-    async fetch_all_books() {
-      const response = await fetch("http://localhost:3000/getbookdata/");
-      const received_data = await response.json();
-      this.books_list = received_data;
+export default{
+    data(){
+      return{
+        //Model creation code for main page starts
+        books_list:[],
+        book_id:'',
+        single_book:{
+          postTitle: '',
+          author: '',
+          price: '',
+          category: ''
+        }
+      }
+    },
+
+    methods:{
+      //Fetch all books function starts
+      async fetch_all_books(){
+        const response = await fetch ('http://localhost:3000/getbookdata/')
+        const received_data = await response.json();
+        this.books_list = received_data;
+      },
+
+      ////Fetch all books function ends
+
+      on_click_local_storage(bookID){
+        localStorage.setItem('book_id_received', bookID);
+        console.log(bookID);
+        this.$router.push('/bookdescription')
+      }
+
+    },
+
+    created(){
+      this.fetch_all_books();
     }
-  },
-
-  created() {
-    this.fetch_all_books();
   }
-};
+
 </script>

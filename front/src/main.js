@@ -5,6 +5,12 @@ import { register } from 'swiper/element/bundle';
 // register Swiper custom elements
 register();
 
+//import router starts
+import router from "./router";
+//import router finish
+
 import './assets/main.css'
 
-createApp(App).mount('#app')
+createApp(App)
+    .use(router)
+    .mount('#app')

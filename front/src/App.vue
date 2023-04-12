@@ -2,6 +2,7 @@
   import HeaderVue from './components/newHeader.vue';
 </script>
 
+
 <template>
   <HeaderVue />
   <div>

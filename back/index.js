@@ -98,7 +98,7 @@ app.post("/signup", async (req, res) => {
   console.log(body);
 
   let useremail = toString(body.user.email);
-  const checker = await CreateUser.find({ email: "bobbob@gmail.com" }); // When adding email create code to make it toLowercase()
+  const checker = await CreateUser.find({ email: useremail }); // When adding email create code to make it toLowercase()
   console.log(checker);
   if (checker.length > 0) res.send(JSON.stringify({ Reply: "Failed" }));
   else {
@@ -109,9 +109,11 @@ app.post("/signup", async (req, res) => {
       password: body.security.password,
       username: body.security.username,
       userid: newUser._id,
-      islogged: true
+      islogged: true,
     });
-    await res.send({ Reply: "Success" });
+    console.log(newUser._id);
+    await res.send({ Reply: "Success",id: newUser._id });
+    // await res.send({ Reply: "Success" });
   }
 });
 

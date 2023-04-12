@@ -1,37 +1,37 @@
 <template>
     <div class="footer">
         <div class="footer_wrapper">
-        <div class="account">
-            <h3>ACCOUNT <i class="arrow"></i></h3>
-            <ul class="account-links">
-                <li><h4>My Account</h4></li>
-                <li><h4>My Bookshop</h4></li>
-                <li><h4>Logout</h4></li>
-            </ul>
+            <div class="account">
+                <h3>ACCOUNT <i class="arrow"></i></h3>
+                <ul class="account-links">
+                    <li><h4>My Account</h4></li>
+                    <li><h4>My Bookshop</h4></li>
+                    <li><h4>Logout</h4></li>
+                </ul>
+            </div>
+            <div class="about_us">
+                <h3>ABOUT US <i class="arrow"></i></h3>
+                <ul class="about-links">
+                    <li><h4>About Peekabook</h4></li>
+                    <li><h4>Careers</h4></li>
+                    <li><h4>Privacy Policy</h4></li>
+                </ul>
+            </div>
+            <div class="shopping_online">
+                <h3>SHOPPING ONLINE <i class="arrow"></i></h3>
+                <ul class="shopping-links">
+                    <li><h4>FAQ's</h4></li>
+                    <li><h4>Delivery Information</h4></li>
+                    <li><h4>Returns and Exchange</h4></li>
+                </ul>
+            </div>
+            <div class="contact_us">
+                <h3>CONTACT US</h3>
+            </div>
+            <div class="logo">
+                <img src="../assets/images/PeekabookLogo_cream.svg" alt="">
+            </div>
         </div>
-        <div class="about_us">
-            <h3>ABOUT US <i class="arrow"></i></h3>
-            <ul class="about-links">
-                <li><h4>About Peekabook</h4></li>
-                <li><h4>Careers</h4></li>
-                <li><h4>Privacy Policy</h4></li>
-            </ul>
-        </div>
-        <div class="shopping_online">
-            <h3>SHOPPING ONLINE <i class="arrow"></i></h3>
-            <ul class="shopping-links">
-                <li><h4>FAQ's</h4></li>
-                <li><h4>Delivery Information</h4></li>
-                <li><h4>Returns and Exchange</h4></li>
-            </ul>
-        </div>
-        <div class="contact_us">
-            <h3>CONTACT US</h3>
-        </div>
-        <div class="logo">
-            <img src="../assets/images/PeekabookLogo_cream.svg" alt="">
-        </div>
-    </div>
     </div>
 </template>
 
@@ -41,13 +41,17 @@
     .footer {
         background-color: var(--book_brown);
         width: 100vw;
+        display: flex;
+        justify-content: center;
         
         
     }
     .footer_wrapper {display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px;
+        width: 80vw;
+        /* padding: 10px; */
+        
     }
     .account, .about_us, .shopping_online, .contact_us {
         padding: 20px;
@@ -56,15 +60,15 @@
         color: var(--book_cream);
         padding: 5px;
     }
-    h3 {
-        font-size: 16px;
-    }
+    
     .logo {
         display: flex;
         flex-direction: column;
         text-align: right;
         justify-content: space-between;
-        padding: 20px;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        /* padding: 20px; */
     }
     .logo img {
         max-width: 25vw;
@@ -74,7 +78,7 @@
         content: "Copyright 2023";
         color: var(--book_cream);
         font-family: 'Quicksand_Regular';
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
     .arrow {
         border: solid var(--book_cream);
@@ -89,13 +93,16 @@
     
     
     
-    @media screen and (max-width: 700px) {
-        .footer {
+    @media screen and (max-width: 849px) {
+        .footer_wrapper {
             flex-direction: column;
+            padding-top: 5vw;
+            width: 70vw
         }
         .logo {
             align-items: center;
-            padding-top: 50px;
+            padding-top: 7vw;
+            padding-bottom: 7vw;
         }
         .logo img {
             min-width: 75vw;

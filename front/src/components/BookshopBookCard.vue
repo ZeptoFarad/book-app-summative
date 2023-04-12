@@ -42,11 +42,23 @@
             <button class="tertiary_button" id="button-full-width">Add to Basket</button>
         </div>
     </div>
+    <div class="edit_delete">
+        <h3 id="edit">Edit</h3>
+        <h3>|</h3>
+        <h3 id="delete">Delete</h3>
+    </div>
 
    
 </template>
 
 <style scoped>
+.edit_delete {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 4vw 1vw 4vw;
+}
+#delete {color: red;}
+
 .book-card-wrapper{
     background-color: white;
     width: 272px;

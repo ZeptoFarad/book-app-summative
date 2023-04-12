@@ -1,5 +1,6 @@
 <template>
     <div class="footer">
+        <div class="footer_wrapper">
         <div class="account">
             <h3>ACCOUNT <i class="arrow"></i></h3>
             <ul class="account-links">
@@ -31,6 +32,7 @@
             <img src="../assets/images/PeekabookLogo_cream.svg" alt="">
         </div>
     </div>
+    </div>
 </template>
 
 
@@ -38,11 +40,14 @@
 <style scoped>
     .footer {
         background-color: var(--book_brown);
-        width: 100%;
-        display: flex;
+        width: 100vw;
+        
+        
+    }
+    .footer_wrapper {display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 50px;
+        padding: 10px;
     }
     .account, .about_us, .shopping_online, .contact_us {
         padding: 20px;
@@ -62,7 +67,7 @@
         padding: 20px;
     }
     .logo img {
-        max-width: 300px;
+        max-width: 25vw;
 
     }
     .logo::after {
@@ -93,7 +98,7 @@
             padding-top: 50px;
         }
         .logo img {
-            min-width: 380px;
+            min-width: 75vw;
         }
         .account-links, .about-links, .shopping-links {
             display: none;

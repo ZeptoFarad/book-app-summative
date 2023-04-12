@@ -32,13 +32,12 @@
 </template>
 
 <style scoped>
-    /* Question wrapper style */
+    /* Question component main wrapper style */
     .questions-answers-wrapper{
         background-color: white;
         border: 1px solid var(--book_brown);
         max-width: 1400px;
         border-radius: 10px;
-        margin: auto;
         padding: 20px;
     }
 
@@ -47,38 +46,11 @@
         justify-content: space-between;
     }
 
+    /* Buyer - Seller question wrapper style */
     .question-wrapper{
         display: flex;
         flex-direction: column;
         border-bottom: 2px solid var(--book_wheat);
-    }
-
-    .question-input-wrapper{
-        padding: 10px;
-        width: clamp(250px, 40vw, 800px);
-        background-color: var(--book_wheat);
-        border-radius: 10px;
-        margin: 10px;
-    }
-  
-
-    .question-box{
-        width: clamp(240px, 40vw, 800px);
-        height: 100px;
-        font-family: 'Quicksand_Regular';
-        margin-bottom: 10px;
-        margin: 0;
-    }
-
-    .button-flex-end{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .primary_button{
-        width: fit-content;
-        margin: 0;
-        
     }
 
     .seller-answer-wrapper{
@@ -89,13 +61,43 @@
         margin-bottom: 10px;
         align-self: flex-end;
     }
+  
+    .button-flex-end{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
     span{
         padding-left: 10px;
         font-size: 18px;
+        text-decoration: underline;
     }
+
     p{
         font-size: 16px;
+    }
+
+    /* Display question input style */
+    .question-input-wrapper{
+        padding: 10px;
+        width: clamp(250px, 40vw, 800px);
+        background-color: var(--book_wheat);
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .primary_button{
+        width: fit-content;
+        margin: 0;
+    }
+
+    .question-box{
+        width: clamp(240px, 40vw, 800px);
+        height: 100px;
+        font-family: 'Quicksand_Regular';
+        margin-bottom: 10px;
+        margin: 0;
     }
 </style>
 

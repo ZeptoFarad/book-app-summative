@@ -12,14 +12,14 @@ import WideImage from "../components/WideImage.vue";
 
   <h1 class="main-h1-title">Latest Listings</h1>
 
-  <section class="cards-section">
-    <router-link to="/bookdescription">
+  <section>
+    <!-- <router-link to="/bookdescription" class="cards-section"> -->
       <BookCard 
       v-for="book of books_list"
       :Book="book"
-      @click="on_click_local_storage()"
+      @click="on_click_local_storage(book._id)"
       />
-    </router-link>
+    <!-- </router-link> -->
   </section>
   {{ book_id}}
   
@@ -83,22 +83,20 @@ export default{
     },
 
     methods:{
+      //Fetch all books function starts
       async fetch_all_books(){
         const response = await fetch ('http://localhost:3000/getbookdata/')
         const received_data = await response.json();
         this.books_list = received_data;
       },
 
-      on_click_local_storage(){
-        this.book_id = book._id
-        localStorage.setItem('book_id_received', 'book_id')
+      ////Fetch all books function ends
+
+      on_click_local_storage(bookID){
+        localStorage.setItem('book_id_received', bookID);
+        console.log(bookID);
+        this.$router.push('/bookdescription')
       }
-      // async fetch_single_book(){
-      //   const response = await fetch ('http://localhost:3000/getsinglebook/'+ this.book_id);
-      //   const mybook = await response.json();
-      //   console.log(mybook)
-      //   this.single_book = mybook;
-      // }
 
     },
 

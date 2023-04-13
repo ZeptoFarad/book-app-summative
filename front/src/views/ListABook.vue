@@ -70,10 +70,15 @@
           <div class="input_box condition_input">
             <!-- Requires drop down -->
             <label for="condition">Condition</label>
-            <select id="condition" name="condition" value="Select condition">
-              <option value="0">New</option>
-              <option value="1">Good</option>
-              <option value="2">Poor</option>
+            <select
+              id="condition"
+              name="condition"
+              v-model="inputBody.condition"
+              value="Select condition"
+            >
+              <option value="New">New</option>
+              <option value="Good">Good</option>
+              <option value="Poor">Poor</option>
             </select>
           </div>
         </div>
@@ -87,6 +92,8 @@
               value="2023-04-11"
               min="1500-01-01"
               max="2023-04-11"
+              :value="inputBody.yearPub"
+              @input="inputBody.yearPub = $event.target.value"
             />
           </div>
           <div class="input_box cover_style_input">
@@ -556,7 +563,8 @@ export default {
   },
   methods: {
     postBook() {
-      for (let m of Object.keys(this.message)) this.message[m] = "";
+      console.log("I have been clicked");
+      console.log(this.inputBody);
     }
   }
 };

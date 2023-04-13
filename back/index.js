@@ -69,7 +69,6 @@ app.get("/getbycategory/:id", async (req, res) => {
   let category = req.params.id;
   console.log(category);
   let category_books = await BookPost.find({ category: category });
-
   res.json(category_books);
 });
 

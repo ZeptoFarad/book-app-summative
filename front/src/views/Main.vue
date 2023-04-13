@@ -14,7 +14,6 @@ import WideImage from "../components/WideImage.vue";
 
 
   <section class="cards-section">
- 
       <BookCard 
       v-for="book of books_list"
       :Book="book"
@@ -26,7 +25,8 @@ import WideImage from "../components/WideImage.vue";
 
   <h1 class="main-h1-title">Popular Categories</h1>
   <section class="popular-categories-section">
-    <PopularCategories />
+    <PopularCategories
+    />
   </section>
 
   <section class="wide-image-section">
@@ -73,6 +73,7 @@ export default{
         //Model creation code for main page starts
         books_list:[],
         book_id:'',
+        category: '',
       }
     },
 
@@ -83,26 +84,28 @@ export default{
         const received_data = await response.json();
         this.books_list = received_data;
       },
-
       ////Fetch all books function ends
 
       //Fetch book ID function starts
       on_click_local_storage(bookID){
-        //Local Storage BookID starts
         localStorage.setItem('book_id_received', bookID);
         console.log(bookID);
-        //Local Storage BookID ends
-        //Router to the specific book page starts
         this.$router.push('/bookdescription')
-        //Router to the specific book page ends
       },
-
       //Fetch book ID function ends
+
+
+      //Fetch book category function start
       // async fetch_category(){
       //   const response = await fetch ('http://localhost:3000//getbycategory/:id')
       //   const received_category = await response.json();
       //   this.book_categories = received_category;
       //   console.log(this.book_categories);
+      // }
+
+      // on_click_local_storage_category(categoryID){
+      //   localStorage.setItem('category_received', categoryID)
+      //   console.log(categoryID);
       // }
     },
 

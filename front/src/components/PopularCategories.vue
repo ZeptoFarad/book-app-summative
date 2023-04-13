@@ -3,18 +3,18 @@
     import ScifiIcon from '../assets/images/scifi-icon.svg'
     import RomanceIcon from '../assets/images/romance-icon.svg'
     import ChildrenIcon from '../assets/images/kids-icon.svg'
-
 </script>
 
 <template>
     <div class="popular-categories-wrapper">
-        <div class="single-category-wrapper" v-for="category in popular_categories">
-                <div class="category">
-                    <div class="icon-wrapper">
-                        <img :src="category.img" alt="">
-                    </div>
+        <div class="single-category-wrapper" 
+        v-for="category in popular_categories">
+            <div class="category">
+                <div class="icon-wrapper">
+                    <img :src="category.img" alt="">
                 </div>
-                <h3 class="category-title">{{ category.category_name }}</h3>
+            </div>
+            <h3 class="category-title" >{{ category.category_name }}</h3>
         </div>
     </div>
 </template>
@@ -99,6 +99,17 @@
                     },
                 ]
             }
-        }
+        },
+
+        methods: {
+            send_category_to_parent(){
+                // this.$emit('passData', this.popular_categories.category_name)
+                console.log(this.popular_categories);
+            }
+        },
+
+        created() {
+            this.send_category_to_parent();
+        },
     }
 </script>

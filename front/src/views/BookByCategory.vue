@@ -1,7 +1,5 @@
 <template>
-    <div>
-       {{ books_by_category }}
-    </div>
+    {{ books_by_category}}
 </template>
 
 <style scoped>
@@ -31,7 +29,7 @@
                 const response = await fetch('http://localhost:3000/getbycategory/' + this.bookCategory);
                 const mycategory = await response.json();
                 console.log(mycategory);
-                this.books_by_category = this.books_by_category.contains(this.bookCategory);
+                this.books_by_category = mycategory;
             }
             // FUNCTION TO FETCH BOOKS BY STORED CATEGORY ENDS
         },

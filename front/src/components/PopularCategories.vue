@@ -3,7 +3,7 @@
 <template>
     <div class="popular-categories-wrapper">
         <div class="single-category-wrapper" 
-        v-for="category in popular_categories" @click="send_category_to_parent(category.category_name)">
+        v-for="category in popular_categories" @click="send_category_to_parent(category.db_category)">
             <div class="category">
                 <div class="icon-wrapper">
                     <img :src="category.img" alt="">
@@ -83,22 +83,26 @@
                 popular_categories:[
                     {
                         category_name:'Thriller',
-                        img: ThrillerIcon
+                        img: ThrillerIcon,
+                        db_category:'800 - Thriller'
                        
                     },
                     {
                         category_name:'Scifi',
-                        img: ScifiIcon
+                        img: ScifiIcon,
+                        db_category:'800 - Scifi'
                         
                     },
                     {
                         category_name:'Romance',
-                        img: RomanceIcon
+                        img: RomanceIcon,
+                        db_category:'800 - Romance'
                         
                     },
                     {
                         category_name:'Children',
-                        img: ChildrenIcon
+                        img: ChildrenIcon,
+                        db_category:'800 - Children'
                         
                     },
                 ]

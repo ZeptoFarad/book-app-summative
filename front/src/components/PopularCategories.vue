@@ -1,9 +1,4 @@
-<script setup>
-    import ThrillerIcon from '../assets/images/thriller-icon.svg'
-    import ScifiIcon from '../assets/images/scifi-icon.svg'
-    import RomanceIcon from '../assets/images/romance-icon.svg'
-    import ChildrenIcon from '../assets/images/kids-icon.svg'
-</script>
+
 
 <template>
     <div class="popular-categories-wrapper">
@@ -77,6 +72,10 @@
 </style>
 
 <script>
+    import ThrillerIcon from '../assets/images/thriller-icon.svg'
+    import ScifiIcon from '../assets/images/scifi-icon.svg'
+    import RomanceIcon from '../assets/images/romance-icon.svg'
+    import ChildrenIcon from '../assets/images/kids-icon.svg'
     export default {
         data(){
             return{
@@ -84,18 +83,22 @@
                     {
                         category_name:'Thriller',
                         img: ThrillerIcon
+                       
                     },
                     {
                         category_name:'Scifi',
                         img: ScifiIcon
+                        
                     },
                     {
                         category_name:'Romance',
                         img: RomanceIcon
+                        
                     },
                     {
                         category_name:'Children',
                         img: ChildrenIcon
+                        
                     },
                 ]
             }
@@ -103,13 +106,13 @@
 
         methods: {
             send_category_to_parent(){
-                // this.$emit('passData', this.popular_categories.category_name)
-                console.log(this.popular_categories);
+                this.$emit('passData', this.popular_categories[0].category_name)
+                console.log(this.popular_categories[0].category_name);
             }
         },
 
         created() {
-            this.send_category_to_parent();
+            // this.send_category_to_parent();
         },
     }
 </script>

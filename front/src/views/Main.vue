@@ -73,12 +73,6 @@ export default{
         //Model creation code for main page starts
         books_list:[],
         book_id:'',
-        single_book:{
-          postTitle: '',
-          author: '',
-          price: '',
-          category: ''
-        }
       }
     },
 
@@ -92,15 +86,29 @@ export default{
 
       ////Fetch all books function ends
 
+      //Fetch book ID function starts
       on_click_local_storage(bookID){
+        //Local Storage BookID starts
         localStorage.setItem('book_id_received', bookID);
         console.log(bookID);
+        //Local Storage BookID ends
+        //Router to the specific book page starts
         this.$router.push('/bookdescription')
-      }
+        //Router to the specific book page ends
+      },
+
+      //Fetch book ID function ends
+      // async fetch_category(){
+      //   const response = await fetch ('http://localhost:3000//getbycategory/:id')
+      //   const received_category = await response.json();
+      //   this.book_categories = received_category;
+      //   console.log(this.book_categories);
+      // }
     },
 
     created(){
       this.fetch_all_books();
+      // this.fetch_category();
     }
   }
 

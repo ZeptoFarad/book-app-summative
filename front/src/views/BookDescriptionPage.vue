@@ -221,6 +221,7 @@ export default {
             console.log(this.bookID);
             this.fetch_single_book();
         },
+        
         async fetch_single_book(){
         const response = await fetch ('http://localhost:3000/getsinglebook/'+ this.bookID);
         const mybook = await response.json();

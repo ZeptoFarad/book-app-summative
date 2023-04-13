@@ -1,47 +1,21 @@
+<script setup>
+    import ThrillerIcon from '../assets/images/thriller-icon.svg'
+    import ScifiIcon from '../assets/images/scifi-icon.svg'
+    import RomanceIcon from '../assets/images/romance-icon.svg'
+    import ChildrenIcon from '../assets/images/kids-icon.svg'
+
+</script>
+
 <template>
     <div class="popular-categories-wrapper">
-        <div class="top-div">
-            <div class="single-category-wrapper">
+        <div class="single-category-wrapper" v-for="category in popular_categories">
                 <div class="category">
                     <div class="icon-wrapper">
-                        <img src="../assets/images/thriller-icon.svg" alt="">
+                        <img :src="category.img" alt="">
                     </div>
                 </div>
-                <h3 class="category-title">Thriller</h3>
-            </div>
-            <div class="single-category-wrapper">
-                <div class="category">
-                    <div class="icon-wrapper">
-                        <img src="../assets/images/scifi-icon.svg" alt="">
-                    </div>
-                </div>
-                <h3 class="category-title">Sci-Fi</h3>
-            </div>
+                <h3 class="category-title">{{ category.category_name }}</h3>
         </div>
-
-
-
-        <div class="bottom-div">
-            <div class="single-category-wrapper">
-                <div class="category">
-                    <div class="icon-wrapper">
-                        <img src="../assets/images/romance-icon.svg" alt="">
-                    </div>
-                </div>
-                <h3 class="category-title">Romance</h3>
-            </div>
-
-            <div class="single-category-wrapper">
-                <div class="category">
-                    <div class="icon-wrapper">
-                        <img src="../assets/images/kids-icon.svg" alt="">
-                    </div>
-                </div>
-                <h3 class="category-title">Children's</h3>
-            </div>
-        </div>
-
-
     </div>
 </template>
 
@@ -52,11 +26,6 @@
         flex-wrap: wrap;
         gap: 3vw;
         padding-bottom: 50px;
-    }
-
-    .top-div, .bottom-div{
-        display: flex;
-        gap: 3vw;
     }
 
     .single-category-wrapper{
@@ -101,11 +70,35 @@
             min-width: 200px;
         }
         .category{
-            width: 30vw;
+            width: 25vw;
         }
 
-        .top-div{
-            padding-bottom: 10px;
-        }
     }
 </style>
+
+<script>
+    export default {
+        data(){
+            return{
+                popular_categories:[
+                    {
+                        category_name:'Thriller',
+                        img: ThrillerIcon
+                    },
+                    {
+                        category_name:'Scifi',
+                        img: ScifiIcon
+                    },
+                    {
+                        category_name:'Romance',
+                        img: RomanceIcon
+                    },
+                    {
+                        category_name:'Children',
+                        img: ChildrenIcon
+                    },
+                ]
+            }
+        }
+    }
+</script>

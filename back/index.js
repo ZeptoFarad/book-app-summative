@@ -63,6 +63,16 @@ app.get("/getsinglebook/:id", async (req, res) => {
   res.json(mybook);
 });
 
+//Get category function
+app.get("/getbycategory/:id", async (req, res) => {
+  const { body } = req;
+  let category = req.params.id;
+  console.log(category);
+  let category_books = await BookPost.find({ category: category });
+
+  res.json(category_books);
+});
+
 app.get("/myListings/:userid", async (req, res) => {
   const userId = req.params.userid;
 

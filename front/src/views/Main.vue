@@ -97,7 +97,6 @@ export default{
         console.log(bookID);
         this.$router.push('/bookdescription')
       }
-
     },
 
     created(){

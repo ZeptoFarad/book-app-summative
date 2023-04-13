@@ -20,7 +20,7 @@ import WideImage from "../components/WideImage.vue";
       @click="on_click_local_storage(book._id)"
       />
   
-  </section>
+
   
 
   <h1 class="main-h1-title">Popular Categories</h1>

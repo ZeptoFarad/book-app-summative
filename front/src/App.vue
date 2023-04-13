@@ -6,11 +6,12 @@
 
 <template>
   <HeaderVue />
-  <div>
-    <router-view></router-view>   
-  </div>
+    
+  <router-view></router-view>
+ 
   <FooterVue />
 </template>
+
 
 
 

@@ -71,14 +71,14 @@
         /* padding: 20px; */
     }
     .logo img {
-        max-width: 25vw;
+        max-width: 20vw;
 
     }
     .logo::after {
         content: "Copyright 2023";
         color: var(--book_cream);
         font-family: 'Quicksand_Regular';
-        /* padding-top: 50px; */
+        padding-top: 2vw;
     }
     .arrow {
         border: solid var(--book_cream);
@@ -93,7 +93,7 @@
     
     
     
-    @media screen and (max-width: 849px) {
+    @media screen and (max-width: 1000px) {
         .footer_wrapper {
             flex-direction: column;
             padding-top: 5vw;

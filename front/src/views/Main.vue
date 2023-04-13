@@ -13,7 +13,7 @@ import WideImage from "../components/WideImage.vue";
   <h1 class="main-h1-title">Latest Listings</h1>
 
 
-  <section>
+  <section class="cards-section">
  
       <BookCard 
       v-for="book of books_list"
@@ -21,6 +21,8 @@ import WideImage from "../components/WideImage.vue";
       @click="on_click_local_storage(book._id)"
       />
   
+    
+  </section>
 
   
 

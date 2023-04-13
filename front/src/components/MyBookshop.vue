@@ -9,31 +9,40 @@
             <h2>My Bookshop</h2>
             <button class="brown_button">List a book</button>
         </div>
-        <div class="current_listings">
+        <div @click="Bool1=!Bool1" class="current_listings">
             <h3>Current Listings</h3>
             <i class="arrow"></i>
         </div>
-        <div class="books_wrapper">
-            <div class="bookcard_wrapper">
-                <BookshopBookCard />
+            <div v-if="Bool1">
+            <div class="books_wrapper">
+                <div class="bookcard_wrapper">
+                    <BookshopBookCard />
+                </div>
+                <div class="bookcard_wrapper">
+                    <BookshopBookCard />
+                </div>
+                <div class="bookcard_wrapper">
+                    <BookshopBookCard />
+                </div>
             </div>
-            <div class="bookcard_wrapper">
-                <BookshopBookCard />
             </div>
-            <div class="bookcard_wrapper">
-                <BookshopBookCard />
-            </div>
-            <div class="bookcard_wrapper">
-                <BookshopBookCard />
-            </div>
-        </div>
-        <div class="sold">
+        <div @click="Bool2=!Bool2" class="sold">
             <h3>Sold</h3>
             <i class="arrow"></i>
         </div>
-        <div class="unsold">
+        <div v-if="Bool2">
+            <div class="books_wrapper">
+            
+            </div>
+        </div>
+        <div @click="Bool3=!Bool3" class="unsold">
             <h3>Unsold</h3>
             <i class="arrow"></i>
+        </div>
+        <div v-if="Bool3">
+            <div class="books_wrapper">
+            
+            </div>
         </div>
         
     </div>
@@ -64,9 +73,9 @@
         transform: rotate(-45deg);
         margin-right: 10px;
     }
+    
     .unsold:hover > .arrow{transform: rotate(45deg) !important;}
     .sold:hover > .arrow{transform: rotate(45deg) !important;}
-
     .current_listings:hover > .arrow{transform: rotate(45deg) !important;}
 
 
@@ -132,7 +141,26 @@
     @media screen and (max-width: 700px){
         .title_section {flex-direction: column; padding: 10px;}
         h2 {padding: 10px;}
+        .bookshop_wrapper {
+            width: 100vw;
+        }
+        .current_listings, .sold, .unsold {width: 90vw;}
 
     }
 
 </style>
+
+<script>
+    
+    export default {
+        data() {
+            return {
+                Bool1: false,
+                Bool2: false,
+                Bool3: false
+
+            }
+        }
+
+    }
+</script>

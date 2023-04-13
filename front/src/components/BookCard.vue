@@ -4,7 +4,7 @@
       <div class="book-card-img-wrapper">
         <img
           class="book-card-img"
-          src="https://ubscan.co.nz/wp-content/uploads/9781681888866-1.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
           alt="book_cover"
         />
       </div>

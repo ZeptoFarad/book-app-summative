@@ -144,13 +144,16 @@
         margin-top: 22px;
     }
     
-    h1{margin-left: 10vw;
-    margin-top: 20vh;
+    h1{margin-left: 20vw;
+    margin-top: 0px;
      font-family: Amatic SC;
      font-size: 64px;
      font-weight: bold ;
     }
-
+   
+    .check-box-skin-out{
+        margin-top: 20px;
+    }
     }
 
 </style>

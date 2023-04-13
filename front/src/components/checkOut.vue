@@ -144,7 +144,7 @@
         margin-top: 22px;
     }
     
-    h1{margin-left: 13vw;
+    h1{margin-left: 10vw;
     margin-top: 20vh;
      font-family: Amatic SC;
      font-size: 64px;

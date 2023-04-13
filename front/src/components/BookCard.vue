@@ -1,29 +1,10 @@
 <template>
-  <!-- <div class="book-card-wrapper">
-        <div class="book-card-content">
-            <div class="book-card-img-wrapper">
-                <img class="book-card-img" src="https://ubscan.co.nz/wp-content/uploads/9781681888866-1.jpg" alt="book_cover">
-            </div>
-            <div class="title-favourite">
-                <h3 class="title">Magnificent Cats</h3>
-                <img src="../assets/images/favourite-icon.svg" alt="">
-            </div>
-            <div class="book-info">
-                <h4>Barbara Taylor</h4>
-                <h4>Nature</h4>
-                <h4>Good</h4>
-                <h2 class="book-price">$25</h2>
-            </div>
-            <button class="tertiary_button" id="button-full-width">Add to Basket</button>
-        </div>
-    </div> -->
-
   <div class="book-card-wrapper">
     <div class="book-card-content">
       <div class="book-card-img-wrapper">
         <img
           class="book-card-img"
-          src="https://ubscan.co.nz/wp-content/uploads/9781681888866-1.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png"
           alt="book_cover"
         />
       </div>

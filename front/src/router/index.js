@@ -8,6 +8,7 @@ import BookDescription from '../views/BookDescriptionPage.vue'
 import SignUp from '../views/SignUp.vue'
 import MyBookshop from '../components/test.vue'
 import Test from '../components/test.vue'
+import BookByCategory from '../views/BookByCategory.vue'
 
 const routes = [
     {
@@ -38,6 +39,12 @@ const routes = [
       path: '/test',
       name: 'Test',
       component: Test
+    },
+
+    {
+      path: '/bookbycategory',
+      name: 'BookByCategory',
+      component: BookByCategory
     }
 ]
 // code below is NOT to be edited

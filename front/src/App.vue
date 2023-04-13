@@ -1,15 +1,15 @@
 <script setup>
-
+  import HeaderVue from './components/newHeader.vue';
+  import FooterVue from './components/Footer.vue'
 </script>
 
 
 <template>
- 
-  
-  <div>
-         
-  </div>
+  <HeaderVue />
+    
   <router-view></router-view>
+ 
+  <FooterVue />
 </template>
 
 

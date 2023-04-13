@@ -26,15 +26,19 @@
         return{
           slides:[
             {
-              img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1103657001/1103657001_default_1.jpg/CatalogContentDetails-1282347-600-600-75-0,0'
+              img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'
             },
   
             {
-              img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1086865_00/1086865_00_default_1.jpg/CatalogContentDetails-179331-600-600-75-0,0'
+              img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'
             },
   
             {
-              img: 'https://www.briscoes.co.nz/globalassets/productimages/briscoes/1091600_00/1091600_00_default_1.jpg/CatalogContentDetails-630170-600-600-75-0,0'
+              img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'
+            },
+
+            {
+              img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'
             }
           ]
         }

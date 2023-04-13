@@ -14,7 +14,6 @@ import WideImage from "../components/WideImage.vue";
 
 
   <section class="cards-section">
- 
       <BookCard 
       v-for="book of books_list"
       :Book="book"
@@ -26,7 +25,8 @@ import WideImage from "../components/WideImage.vue";
 
   <h1 class="main-h1-title">Popular Categories</h1>
   <section class="popular-categories-section">
-    <PopularCategories />
+    <PopularCategories
+    />
   </section>
 
   <section class="wide-image-section">
@@ -73,12 +73,7 @@ export default{
         //Model creation code for main page starts
         books_list:[],
         book_id:'',
-        single_book:{
-          postTitle: '',
-          author: '',
-          price: '',
-          category: ''
-        }
+        // category: '',
       }
     },
 
@@ -89,19 +84,20 @@ export default{
         const received_data = await response.json();
         this.books_list = received_data;
       },
-
       ////Fetch all books function ends
 
+      //Fetch book ID function starts
       on_click_local_storage(bookID){
         localStorage.setItem('book_id_received', bookID);
         console.log(bookID);
         this.$router.push('/bookdescription')
-      }
-
+      },
+      //Fetch book ID function ends
     },
 
     created(){
       this.fetch_all_books();
+      // this.fetch_category();
     }
   }
 

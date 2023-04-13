@@ -9,7 +9,7 @@
             </div>
             <h2>Your second hand bookstore</h2>
             <h3>Are you wanting to sell?</h3>
-            <button class="primary_button">Sign Up Now!</button>
+            <button class="primary_button" @click="router_to_sign_up()">Sign Up Now!</button>
         </div>
     </div>
 </template>
@@ -60,7 +60,14 @@
             object-fit:contain;
         }
     }
-
-
-
 </style>
+
+<script>
+    export default {
+        methods:{
+            router_to_sign_up(){
+                this.$router.push('/signup')
+            }
+        }
+    }
+</script>

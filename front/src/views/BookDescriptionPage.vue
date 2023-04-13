@@ -193,6 +193,13 @@
         padding-bottom: 15px;
         width: 150px;
     }
+    /* MEDIA QUERY */
+
+    @media (max-width: 500px){
+        .product-details{
+            flex-direction: column;
+        }
+    }
 
         /* MEDIA QUERY */
 
@@ -203,6 +210,8 @@
     }
 
 </style>
+
+
 
 <script>
 
@@ -235,8 +244,6 @@ export default {
     }
 }
 </script>
-
-
 
 
 

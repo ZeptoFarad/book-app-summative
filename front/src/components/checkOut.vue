@@ -65,14 +65,14 @@
     .button-buy-now{background-color:rgba(62, 26, 9, 1) ; 
         padding: 3px 10px 3px 10px;  
         border-radius: 6px;  border: 0.5px solid grey; color: aliceblue; }
-    h1{margin-left: 12.5vw;
-    margin-top: 22vh;
+    h1{margin-left: 15vw;
+    margin-top: 2vh;
      font-family: Amatic SC;
      font-size: 64px;
      font-weight: bold ;
 }
     .check-box-skin-out{
-        margin-left: 12.5vw;
+        margin-left: 15vw;
         margin-top: 0px;
         background-color: bisque;
         width:64vw ;

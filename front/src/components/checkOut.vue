@@ -117,9 +117,7 @@
         width: 55vw;
         
     }
-    .check-box-body{
-        border:1px solid red
-    }
+   
     @media screen and (max-width:560px){
         .check-box-long-1{
             display: flex;
@@ -148,10 +146,10 @@
         margin-top: 22px;
     }
     
-    h1{margin-left: 20vw;
-    margin-top: 0px;
+    h1{margin-left: 23vw;
+    margin-top: 16px;
      font-family: Amatic SC;
-     font-size: 64px;
+     font-size: 40px;
      font-weight: bold ;
     }
    

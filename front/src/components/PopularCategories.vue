@@ -3,7 +3,7 @@
 <template>
     <div class="popular-categories-wrapper">
         <div class="single-category-wrapper" 
-        v-for="category in popular_categories">
+        v-for="category in popular_categories" @click="send_category_to_parent(category.category_name)">
             <div class="category">
                 <div class="icon-wrapper">
                     <img :src="category.img" alt="">
@@ -105,9 +105,9 @@
         },
 
         methods: {
-            send_category_to_parent(){
-                this.$emit('passData', this.popular_categories[0].category_name)
-                console.log(this.popular_categories[0].category_name);
+            send_category_to_parent(categoryName){
+                localStorage.setItem('category_pass_data', categoryName)
+                this.$router.push('/test')
             }
         },
 

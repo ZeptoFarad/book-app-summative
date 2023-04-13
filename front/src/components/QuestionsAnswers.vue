@@ -74,7 +74,7 @@
         padding-bottom: 20px;
         width: clamp(250px, 70vw, 1000px)
     }
-    .buyer-answer-wrapper{
+    .seller-answer-wrapper{
         background-color: var(--book_wheat);
         width: clamp(200px, 50vw, 900px);
         padding: 20px;

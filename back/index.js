@@ -53,16 +53,24 @@ app.get("/getbookdata", async (req, res) => {
 //   res.json(get_single_book)
 // });
 
-app.get("/getsinglebook/:id", async(req,res)=>{
-  const {body} = req;
+app.get("/getsinglebook/:id", async (req, res) => {
+  const { body } = req;
   let book = req.params.id;
-console.log(book)
-  console.log("Book Received" 
-  + book)
-  let mybook = await BookPost.findOne({_id: book})
-  
-  res.json(mybook)
-})
+  console.log(book);
+  console.log("Book Received" + book);
+  let mybook = await BookPost.findOne({ _id: book });
+
+  res.json(mybook);
+});
+
+app.get("/myListings/:userid", async (req, res) => {
+  const userId = req.params.userid;
+
+  let mylistings = await BookPost.find({ ownerId: userId });
+  res.json(mylistings);
+});
+
+// test IDs: 6435e1d7944caceac918b2c1   ,    64360f1a00033def9b57b59e
 
 // Delete Book By Id
 app.post("/deletebook", async (req, res) => {
@@ -90,7 +98,7 @@ app.post("/signup", async (req, res) => {
   console.log(body);
 
   let useremail = toString(body.user.email);
-  const checker = await CreateUser.find({ email: "bobbob@gmail.com" }); // When adding email create code to make it toLowercase()
+  const checker = await CreateUser.find({ email: useremail }); // When adding email create code to make it toLowercase()
   console.log(checker);
   if (checker.length > 0) res.send(JSON.stringify({ Reply: "Failed" }));
   else {
@@ -101,9 +109,11 @@ app.post("/signup", async (req, res) => {
       password: body.security.password,
       username: body.security.username,
       userid: newUser._id,
-      islogged: true
+      islogged: true,
     });
-    await res.send({ Reply: "Success" });
+    console.log(newUser._id);
+    await res.send({ Reply: "Success",id: newUser._id });
+    // await res.send({ Reply: "Success" });
   }
 });
 

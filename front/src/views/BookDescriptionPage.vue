@@ -201,6 +201,14 @@
         }
     }
 
+        /* MEDIA QUERY */
+
+        @media (max-width: 500px){
+        .product-details{
+            flex-direction: column;
+        }
+    }
+
 </style>
 
 
@@ -238,5 +246,4 @@ export default {
 </script>
 
 
-    
 

@@ -79,6 +79,7 @@
     export default {
         data(){
             return{
+                // ARRAY TO POPULATE CATEGORY DIV STARTS
                 popular_categories:[
                     {
                         category_name:'Thriller',
@@ -101,14 +102,17 @@
                         
                     },
                 ]
+                // ARRAY TO POPULATE CATEGORY DIV ENDS
             }
         },
 
         methods: {
+            // FUNCTION TO LOCAL STORAGE CATEGORY AND ROUTER TO BOOK BY CATEGORY PAGE STARTS
             send_category_to_parent(categoryName){
-                localStorage.setItem('category_pass_data', categoryName)
-                this.$router.push('/test')
+                localStorage.setItem('book_category_passed_data', categoryName)
+                this.$router.push('/bookbycategory')
             }
+            // FUNCTION TO LOCAL STORAGE CATEGORY AND ROUTER TO BOOK BY CATEGORY PAGE ENDS
         },
 
         created() {

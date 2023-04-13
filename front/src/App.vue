@@ -9,6 +9,7 @@
   <div class="checkout-page">
          <checkoutVue />
   </div>
+  <router-view></router-view>
 </template>
 
 

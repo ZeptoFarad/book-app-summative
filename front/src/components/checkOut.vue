@@ -81,7 +81,7 @@
     }
     .check-box-short-1{margin-right: 1vw; width: 25vw; }
     .check-box-short-2{margin-left: 1vw; width: 25vw;}
-    .input-box{ width: 25vw;  border-radius: 5px; height: 28px; border: 0.5px solid grey;}
+    .input-box{ width: 24vw;  border-radius: 5px; height: 28px; border: 0.5px solid grey;}
     .input-box2{border-radius: 5px; height: 28px; border: 0.5px solid grey; }
   
     .check-box-skin{
@@ -89,8 +89,8 @@
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
         padding-top: 5vw;
         margin: 2px auto;
         
@@ -115,6 +115,10 @@
         display: flex;
         justify-content: space-between;
         width: 55vw;
+        
+    }
+    .check-box-body{
+        border:1px solid red
     }
     @media screen and (max-width:560px){
         .check-box-long-1{

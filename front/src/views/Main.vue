@@ -19,7 +19,7 @@ import WideImage from "../components/WideImage.vue";
       :Book="book"
       @click="on_click_local_storage(book._id)"
       />
-  
+  </section>
 
   
 

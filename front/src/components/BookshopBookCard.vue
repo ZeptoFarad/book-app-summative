@@ -111,6 +111,7 @@ export default {
         body: JSON.stringify({ _id: id })
       });
       console.log(deletedbook.body);
+      this.$emit("RefreshState");
     }
   }
 };

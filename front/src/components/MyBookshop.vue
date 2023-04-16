@@ -15,7 +15,11 @@ import BookshopBookCard from "./BookshopBookCard.vue";
       </div>
       <div v-if="Bool1">
         <div class="books_wrapper">
-          <BookshopBookCard v-for="book in this.books" :bookData="book" />
+          <BookshopBookCard
+            v-for="book in this.books"
+            :bookData="book"
+            @RefreshState="getbookdata()"
+          />
         </div>
       </div>
       <div @click="Bool2 = !Bool2" class="sold">
@@ -96,9 +100,10 @@ import BookshopBookCard from "./BookshopBookCard.vue";
 }
 .books_wrapper {
   display: flex;
-  gap: 5vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  justify-content: center;
+  gap: 3vw;
+  padding: 2vw;
+
   flex-wrap: wrap;
 }
 h3 {

@@ -127,6 +127,7 @@
     }
     .check-box-long-1 input{
         width: 54vw;
+    
     }
     .check-box-short-1{
      width: 54vw;

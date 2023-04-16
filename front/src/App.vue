@@ -1,19 +1,10 @@
 <script setup>
-  import HeaderVue from './components/newHeader.vue';
-  import FooterVue from './components/Footer.vue'
+import headerVue from "./components/newHeader.vue";
+import MyBookshop from "./components/MyBookshop.vue";
 </script>
 
-
 <template>
-  <HeaderVue />
-    
-  <router-view></router-view>
- 
-  <FooterVue />
+  <div>
+    <MyBookshop />
+  </div>
 </template>
-
-
-
-
-
-

@@ -39,6 +39,7 @@ app.post("/editbook", async (req, res) => {
   let editbook = await BookPost.updateOne({ _id: id }, body);
   await res.send(editbook);
 });
+
 // Get Book Data
 //# Note: response is updside down
 app.get("/getbookdata", async (req, res) => {
@@ -76,6 +77,8 @@ app.get("/myListings/:userid", async (req, res) => {
   const userId = req.params.userid;
 
   let mylistings = await BookPost.find({ ownerId: userId });
+
+  console.log("received request");
   res.json(mylistings);
 });
 
@@ -84,9 +87,10 @@ app.get("/myListings/:userid", async (req, res) => {
 // Delete Book By Id
 app.post("/deletebook", async (req, res) => {
   const { body } = req;
-  console.log(body._id);
+
   let todelete = await BookPost.deleteOne({ _id: body._id });
-  res.send("Complete");
+  console.log(todelete);
+  res.json(todelete);
 });
 
 // Add Comment
@@ -118,10 +122,10 @@ app.post("/signup", async (req, res) => {
       password: body.security.password,
       username: body.security.username,
       userid: newUser._id,
-      islogged: true,
+      islogged: true
     });
     console.log(newUser._id);
-    await res.send({ Reply: "Success",id: newUser._id });
+    await res.send({ Reply: "Success", id: newUser._id });
     // await res.send({ Reply: "Success" });
   }
 });

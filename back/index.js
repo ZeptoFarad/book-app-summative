@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 mongoose.connect(
-  `mongodb+srv://PeekABookDB:sNIGWcBgyeX5MOo3@cluster0.m3o8ybb.mongodb.net/?retryWrites=true&w=majority`
+  `mongodb+srv://*****:********@cluster0.m3o8ybb.mongodb.net/?retryWrites=true&w=majority`
 );
 
 // Book Functions
